@@ -1,0 +1,231 @@
+body {
+    overflow-x: hidden;
+    background-color: #fafafa;
+    padding-bottom: 15px;
+}
+
+td {
+	vertical-align: middle !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align: center;
+  height: 75px;
+}
+
+.gpu {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+.yes {
+	color: green;
+}
+
+.no {
+	color: red;
+}
+
+.dunno {
+	color: gray;
+}
+
+.tbl-head {
+	border: 0;
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+.tbl-td1 {
+	width: 90px;
+	text-align: center;
+}
+
+.tbl-td1 img {
+	width: 90px;
+	height: 90px;
+}
+
+.tbl-td2 {
+	width: auto;
+	font-size: 16px;
+	padding-left: 0 !important;
+}
+
+.tbl-td3 {
+	width: 10%;
+}
+
+.tbl-td4 {
+	width: 10%;
+	text-align: center;
+}
+
+.compat-item {
+	font-size: 16px;
+	line-height: 100px;
+	height: 100px;
+	display: block;
+	padding-left: 15px;
+}
+
+.compat-item:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.status {
+	font-size: 36px;
+}
+
+.nav-item i, .key i {
+	margin-right: 5px;
+}
+
+.perfect {
+	color: blue;
+}
+
+.runs {
+	color: green;
+}
+
+.loads {
+	color: orange;
+}
+
+.unplayable {
+	color: red;
+}
+
+.unknown {
+	color: gray;
+}
+
+.tekno-main {
+	width: 75%;
+}
+
+.game-list-head {
+	font-weight: bold;
+	/*text-decoration: underline;*/
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    /*padding: 15px;*/
+}
+
+.tekno-nav {
+    height: 84px;
+    line-height: 84px;
+    background-color: #414e78;
+    font-size: 14px;
+    min-width: 1116px;
+}
+
+.tekno-nav a.nav-link {
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.tekno-nav a.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pic-teknoparrot {
+    /*background-image: url("../img/teknoparrot.png");*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+}
+
+.tekno-header {
+    height: 120px;
+    line-height: 120px;
+    font-size: 30px;
+    text-align: left;
+    color: #2e2e2e;
+}
+
+.tekno-box {
+    background-color: #fff;
+    border: 1px solid #E6E8EA;
+    border-radius: 3px;
+    height: 100%;
+}
+
+.tekno-pic-box {
+    background-color: #fff;
+    border: 1px solid #E6E8EA;
+    border-radius: 3px;
+}
+
+.tekno-space {
+    margin-top: 15px;
+}
+
+.tbox-header {
+    font-weight: bold;
+    color: #2e2e2e;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 25px;
+    border-bottom: 1px solid #E6E8EA;
+    width: 100%;
+    display: block;
+}
+
+.tbox-header-text {
+    padding-left: 15px;
+}
+
+.tbox-content {
+    padding: 15px;
+    color: #2e2e2e;
+    display: block;
+    font-size: 14px;
+}
+
+.tbox-content p {
+    font-size: 14px;
+}
+
+span.tq {
+    color: #ea1e63;
+    padding: 15px 15px 0 15px;
+    display: block;
+    font-size: 14px;
+}
+
+span.ta {
+    padding: 0 15px 15px 30px;
+    display: block;
+    font-size: 14px;
+}
+
+#wrapper {
+    padding-left: 0;
+    /*padding-left: 350px;*/
+}
+
+#page-content-wrapper {
+    /*padding: 20px;*/
+    position: relative;
+}
+
+.container { width: @container-desktop !important; }
