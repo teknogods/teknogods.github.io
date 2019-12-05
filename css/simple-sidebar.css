@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background-color: #fafafa;
+    background-color: #2b3e50;
     padding-bottom: 15px;
 }
 
@@ -133,7 +133,7 @@ td {
 .tekno-nav {
     height: 84px;
     line-height: 84px;
-    background-color: #414e78;
+    background-color: #4e5d6c;
     font-size: 14px;
     min-width: 1116px;
 }
