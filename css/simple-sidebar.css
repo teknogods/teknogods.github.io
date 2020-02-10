@@ -10,6 +10,26 @@ td {
 	padding-bottom: 0 !important;
 }
 
+#tekno-letter-nav {
+	width: 99%;
+	margin: 0 auto;
+}
+
+#tekno-letter-nav td {
+	width: 3.8%;
+	text-align: center;
+}
+
+#tekno-letter-nav td a {
+	width: 100%;
+	display: block;
+	border-radius: 3px;
+}
+
+#tekno-letter-nav td a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
 .column {
   display: flex;
   flex-direction: column;
