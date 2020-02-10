@@ -15,7 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="../css/simple-sidebar.css" rel="stylesheet">
 	
-	<title>TeknoParrot > Compatibility > After Burner Climax</title>
+	<title>TeknoParrot > Compatibility > Sega Rally 3</title>
 
 </head>
 
@@ -57,7 +57,7 @@
             <div class="container-fluid tekno-main">
                 <div class="row tekno-space">
                     <div class="col-md-12">
-                        <div class="tekno-pic-box pic-teknoparrot" style='background-image: url("../img/abc.png");'><p>After Burner Climax</p></div>
+                        <div class="tekno-pic-box pic-teknoparrot" style='background-image: url("../img/SR3.png");'><p>Sega Rally 3</p></div>
                     </div>
                 </div>
 
@@ -69,8 +69,9 @@
                                 <span class="tbox-header-text">About</span>
                             </span>
                             <span class="tbox-content">
-                                <p><span style="font-weight: bold;">Hardware:</span> <a href="lindbergh-yellow.htm">SEGA Lindbergh Yellow</a></p>
-								<p><span style="font-weight: bold;">Game Info:</span> After Burner Climax is a combat flight video game developed by Sega AM2 and published by Sega. The game is a part of the After Burner series, and was first released in arcades in 2006 and was later ported to Xbox Live Arcade and PlayStation Network in April 2010.</p>
+                                <p><span style="font-weight: bold;">Hardware:</span> Sega Europa-R<br /><br />
+								<span style="font-weight: bold;">Game Info:</span> Sega Rally 3 is the arcade sequel to Sega Rally 2, developed and released by Sega. Unlike most other installments in the series, this was not released in Japan. 
+								</p>
                             </span>
                         </div>
                     </div>
@@ -98,8 +99,8 @@
                             <span class="tbox-content">
 								<div class="row">
 									<div class="column"><i class="fas fa-check-circle gpu yes"></i>Nvidia</div>
-									<div class="column"><i class="fas fa-exclamation-circle gpu yes"></i>AMD</div>
-									<div class="column"><i class="fas fa-times-circle gpu no"></i>Intel</div>
+									<div class="column"><i class="fas fa-check-circle gpu yes"></i>AMD</div>
+									<div class="column"><i class="fas fa-question-circle gpu dunno"></i>Intel</div>
 								</div>
                             </span>
                         </div>
@@ -113,15 +114,16 @@
                                 <span class="tbox-header-text">Setup</span>
                             </span>
                             <span class="tbox-content">
-								<p style="font-weight: bold;">Game Setup</p>
-                                <ul>
-									<li>Extract abc.bin (with PowerISO for example).</li>
-									<li>Copy 'abc' from disk0 to disk1 and run from there.</li>
-                                </ul>
-								<p style="font-weight: bold;">AMD Shader Fix</p>
-								<ul>
-									<li><a href="https://mega.nz/#!20pzDaAQ!dNuODm_0_SS1CAGUULeEprlMXPSSsYGYbGs2LfMmzUM" target="_blank">Download</a></li>
-									<li>Extract files to your After Burner Climax\disk1 folder and overwrite files.</li>
+								<p style="font-weight: bold;">Windows 10 1809 (and newer) crashfix</p>
+								<ul>									
+									<li>1. Download and install <a href="https://github.com/Nevcairiel/LAVFilters/releases" target="_blank">LAVFilters</a></li>
+									<li>2. Open up "LAV Video Configuration"</li>
+									<li>3. Go to "Formats" and untick <a href="../img/sr3guide/1.png" target="_blank">"Use Microsoft WMV9 MFT decoder for WMV3 and VC-1"</a></li>
+									<li>4. Download and run <a href="https://www.videohelp.com/software/Codec-Tweak-Tool" target="_blank">Codec Tweak Tool</a></li>
+									<li>5. Select <a href="../img/sr3guide/2.png" target="_blank">"Preferred decoders" under "Win7DSFilterTweaker"</a></li>
+									<li>6. Scroll down under "## 32-bit decoders ##" to WMV1</li>
+									<li>7. Select <a href="../img/sr3guide/3.png" target="_blank">LAV Video for "WMV1", "WMV2", "WMV3" (and optionally "WMVA")</a></li>
+									<li>8. Click Apply and then close it.</li>
 								</ul>
                             </span>
                         </div>
@@ -135,8 +137,8 @@
                                 <span class="tbox-header-text">Common Issues / Questions</span>
                             </span>
                             <span class="tbox-content">
-								<span class="tq">Why are shadows not displaying?</span>
-								<span class="ta">Currently the shadows do not render properly.</span>
+								<span class="tq">My game crashes with "Out of memory" error</span>
+								<span class="ta">Game has issue with Windows 10 versions 1809 and newer, see the solution above.</span>
                             </span>
                         </div>
                     </div>
