@@ -195,6 +195,7 @@ td {
     border-radius: 3px;
 	text-align: center;
 	height: 175px;
+	background-size: 125px;
 }
 
 .tekno-pic-box p {
@@ -228,6 +229,14 @@ td {
     color: #2e2e2e;
     display: block;
     font-size: 14px;
+}
+
+.tbox-content > ul > li {
+	font-weight: bold;
+}
+
+.tbox-content > ul > ul {
+	margin-bottom: 20px;
 }
 
 .tbox-content p {
