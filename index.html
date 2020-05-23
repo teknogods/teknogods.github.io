@@ -1,218 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>TeknoParrot > Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	
 	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-tekno">
+      <a class="navbar-brand" href="index.html"><img src="img/teknoparrot-logo-small.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="getstarted.html"><i class="fas fa-tasks"></i>Get Started</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="downloads.html"><i class="fas fa-download"></i>Downloads</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="https://www.reddit.com/r/teknoparrot/" target="_blank"><i class="fab fa-reddit"></i>Reddit</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="https://www.patreon.com/Teknogods" target="_blank"><i class="fab fa-patreon"></i>Patreon</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/bntkyXZ" target="_blank"><i class="fab fa-discord"></i>Discord</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="https://github.com/teknogods" target="_blank"><i class="fab fa-github"></i>Github</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
 	
-	<title>TeknoParrot > Home</title>
-
-</head>
-
-<body>
-
-    <div id="wrapper">
-
-        <!-- Page Content -->
-
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-md tekno-nav">
-                <ul class="nav">
-					<li class="nav-item" style="margin-right: 10px;">
-						<img src="img/teknoparrot-head.png" />
-					</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Home</a>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" href="compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" href="https://teknoparrot.com/download" target="_blank"><i class="fas fa-download"></i>Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.reddit.com/r/teknoparrot/" target="_blank"><i class="fab fa-reddit"></i>Reddit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.patreon.com/Teknogods" target="_blank"><i class="fab fa-patreon"></i>Patreon</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/bntkyXZ" target="_blank"><i class="fab fa-discord"></i></span>Discord</a>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" href="https://github.com/teknogods" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="container-fluid tekno-main">
-                <div class="row tekno-space">
-                    <div class="col-md-12">
-                        <div class="tekno-pic-box pic-teknoparrot" style='background-image: url("img/teknoparrot.png");'></div>
-                    </div>
-                </div>
-
-                <div class="row tekno-space">
-                    <div class="col-md-12">
-                        <div class="tekno-box">
-                            <span class="tbox-header">
-                                <i class="fas fa-info-circle"></i>
-                                <span class="tbox-header-text">About</span>
-                            </span>
-                            <span class="tbox-content">
-                                <p>TeknoParrot is a software package allowing you to run selected PC-based arcade titles on your own hardware, with full support for keyboard and mouse controls, gamepads, steering wheels and joysticks.</p>
-								<p>We currently support games for various arcade systems, mapping the proprietary add-on hardware found in these systems to commodity PC peripherals, and fixing any other limitations in the game software that prevents them from running on standard Windows systems.</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-				<div class="row tekno-space">
-					<div class="col-md-12">
-						<div class="tekno-box">
-							<span class="tbox-header">
-								<i class="fas fa-gamepad"></i>
-								<span class="tbox-header-text">Supported Games</span>
-							</span>
-							<span class="tbox-content">
-								<p>See our <a href="compatibility.html">Compatibility List</a> !</p>
-                            </span>
-						</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tekno-box-clear" style="text-align: center;">
+					<img src="img/teknoparrot-logo.png" style="height: 300px; width: 300px;" />
+				</div>
+				
+			</div>
+		</div>
+	
+		<div id="teknoCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#teknoCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#teknoCarousel" data-slide-to="1"></li>
+				<li data-target="#teknoCarousel" data-slide-to="2"></li>
+				<li data-target="#teknoCarousel" data-slide-to="3"></li>
+				<li data-target="#teknoCarousel" data-slide-to="4"></li>
+			</ol>
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/c-1.png" alt="">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/c-2.png" alt="">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/c-3.png" alt="">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/c-4.png" alt="">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/c-5.png" alt="">
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#teknoCarousel" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#teknoCarousel" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div id="getStarted">
+					<a class="btn btn-primary" href="getstarted.html" role="button">Get Started</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<div class="tekno-box h-100">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-info-circle"></i>About TeknoParrot</p>
+					</div>
+					<div class="tekno-box-content" style="height: 92%;">
+						<p>
+							TeknoParrot is a software package allowing you to run selected PC-based 
+							arcade titles on your own hardware, with full support for keyboard and 
+							mouse controls, gamepads, steering wheels and joysticks.
+						</p>
+						<p>
+							We currently support games for various arcade systems, mapping the 
+							proprietary add-on hardware found in these systems to commodity PC 
+							peripherals, and fixing any other limitations in the game software 
+							that prevents them from running on standard Windows systems.
+						</p>
+						<p>
+							<span style="font-weight: bold;">Support us!</span>
+						</p>
+						<p>
+							Please check out the <a href="https://www.patreon.com/Teknogods" target="_blank">TeknoParrot Patreon</a> 
+							and consider supporting us. All Patreon funds go toward arcade hardware/game research and getting more titles added! 
+						</p>
+						<p>
+							<span style="font-weight: bold;">Join us!</span>
+						</p>
+						<p>
+							Join our friendly community! Connect to the <a href="#">TeknoParrot Discord</a> channel for getting help, keeping up 
+							with the latest info, and just connecting to others.
+						</p>
 					</div>
 				</div>
-				<div class="row tekno-space">
-					<div class="col-md-12">
-						<div class="tekno-box">
-							<span class="tbox-header">
-								<i class="fas fa-desktop"></i>
-								<span class="tbox-header-text">Supported Hardware</span>
-							</span>
-							<span class="tbox-content">
-								<ul>
-									<li><a href="compatibility/ex-board.htm">Examu eX-Board</a></li>
-									<li>Global VR PC Based</li>
-									<li>Konami PC Based</li>
-									<li><a href="compatibility/namco-es3.htm">Namco System ES3 (A/B/X)</a></li>
-									<li><a href="compatibility/namco-n2.htm">Namco System N2</a></li>
-									<li>Raw Thrills PC Based</li>
-									<li><a href="compatibility/europa-r.htm">SEGA Europa-R</a></li>
-									<li><a href="compatibility/lindbergh-yellow.htm">SEGA Lindbergh Yellow</a></li>
-									<li><a href="compatibility/lindbergh-red-ex.htm">SEGA Lindbergh Red/Red EX</a></li>
-									<li><a href="compatibility/nu.htm">SEGA Nu (Vanilla/1.1/2/SX/SX 1.1)</a></li>
-									<li>SEGA PC Based</li>
-									<li>SEGA RingEdge</li>
-									<li>SEGA RingEdge 2</li>
-									<li>SEGA RingWide</li>
-									<li><a href="compatibility/nesicaxlive.htm">Taito NESiCAxLive</a></li>
-									<li><a href="compatibility/type-x.htm">Taito Type X/X+</a></li>
-									<li><a href="compatibility/type-x2.htm">Taito Type X2</a></li>
-									<li>Taito Type X3</li>
-									<li>Taito Type X Zero</li>
-								</ul>
-                            </span>
-						</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="tekno-box h-100">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-gamepad"></i></i>Game Support</p>
+					</div>
+					<div class="tekno-box-content" style="height: 92%;">
+						<p>
+							TeknoParrot currently supports over <span class="wow">130</span> arcade titles! 
+							But we're not stopping there. New games are regularly added, and existing game issues 
+							are regularly addressed. 
+						</p>
+						<p>
+							Here are some notable arcade titles that run with TeknoParrot:
+						</p>
+						<ul>
+							<li>After Burner Climax</li>
+							<li>Counter-Strike NEO</li>
+							<li>House of the Dead 4</li>
+							<li>Fast and the Furious series</li>
+							<li>Initial D series</li>
+							<li>Let's Go! Island / Jungle</li>
+							<li>Luigi's Mansion</li>
+							<li>Mach Storm</li>
+							<li>Mario Kart Arcade GP DX</li>
+							<li>OutRun 2 Special Tours Super Deluxe</li>
+							<li>StarWars Battle Pod</li>
+							<li>Street Fighter series</li>
+							<li>Virtua Fighter 5</li>
+							<li>Wangan Midnight Maximum Tune 5</li>
+						</ul>
+						<p>
+							<span style="font-weight: bold;">And many more!</span> Check out our <a href="compatibility.html">Compatibility</a> page for the full list!
+						</p>
 					</div>
 				</div>
-                <div class="row tekno-space">
-                    <div class="col-md-12">
-                        <div class="tekno-box">
-                            <span class="tbox-header">
-                                <i class="fas fa-tasks"></i>
-                                <span class="tbox-header-text">Setup</span>
-                            </span>
-                            <span class="tbox-content">
-								<p style="font-weight: bold;">TeknoParrot</p>
-                                <ol>
-                                    <li><a href="https://teknoparrot.com/download" target="_blank">Download</a> latest TeknoParrot and extract archive somewhere.</li>
-									<li>Open your extracted TeknoParrot folder and run TeknoParrotUi.exe.</li>
-									<li>If this is your first time running TeknoParrot, you will be greeted with a message to set emulation settings. Click OK.</li>
-									<li>If you have no games setup, you will be prompted to do so. You can say No for now.</li>
-									<li>If you receive any popups to that updates are available, go ahead and click Update on each.</li>
-									<li>At the top left of windows, click the hamburger icon, and choose Settings.</li>
-									<li>sTo0z Zone is a controller's dead zone, most people feel comfortable around 20% or so. Adjust to your liking. If you need to setup your wheel axis settings, do so now. If you don't know, just try a game with your wheel and if see if you need to adjust.</li>
-									<li>Click Save settings, and then Back.</li>
-									<li>Click Hamburger menu again, and click Add Game.</li>
-									<li>Choose the game from the list you have on your PC and wish to set up, then click ADD GAME.</li>
-									<li>With your game selected from the Home menu, click GAME SETTINGS.</li>
-									<li>Click Game Location box to choose where the appropriate game executable is. Specific game setups can be found on the <a href="compatibility.html">Compatibility</a> page of this site.</li>
-									<li>Setup other options to your liking and click Save settings, then Back. Generally for an Xbox controller you want to select XInput, and everything else leave un-checked.</li>
-									<li>Finally, click CONTROLLER SETUP.</li>
-									<li>Click on each space for each button you want to set, then press the button you want on your controller.</li>
-									<li>When finished, click Save settings, then Back.</li>
-									<li>Repeat to setup any other games, when you want to play a game, select from the list and click LAUNCH GAME.</li>
-									<li>Pressing ESC on your keyboard should exit the game.</li>
-									<li>If you encouter issues, please look up a specific game in the <a href="compatibility.html">Compatibility</a> page of this site.</li>
-                                </ol>
-								<p style="font-weight: bold;">Extra Recommended Steps</p>
-									<ul>
-										<li>It's a good idea to install DirectX 9 runtimes, found <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">here</a>.</li>
-										<li>It's a good idea to install Visual C++ runtimes, an easy pack to install all is found <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">here</a>.</li>
-									</ul>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tekno-space">
-                    <div class="col-md-12">
-                        <div class="tekno-box">
-                            <span class="tbox-header">
-                                <i class="fas fa-exclamation-circle"></i>
-                                <span class="tbox-header-text">Common Issues / Questions</span>
-                            </span>
-                            <span class="tbox-content">
-                                <span class="tq">I get an error extracting the archive!</span>
-                                <span class="ta">We have seen some users not able to extract the TeknoParrot archive if their software is too old. Please download latest update from software such as <a href="https://www.7-zip.org/" target="_blank">7zip</a> or <a href="https://www.rarlab.com/" target="_blank">WinRAR</a>.</span>
-								<span class="tq">My AntiVirus program reports a virus!</span>
-								<span class="ta">Older versions of TeknoParrot project would trigger a false positive virus warning. TeknoParrot does not contain any malicious code. As of April 3, 2019, TeknoParrot has acquired an SSL certificate from COMODO, ensuring there is no virus associated with TeknoParrot. If you are still receiving a virus warning, please make sure you <a href="https://teknoparrot.com/download" target="_blank">Download</a> the latest version of TeknoParrot.</span>
-								<span class="tq">How do I run on Mac or Linux?</span>
-								<span class="ta">Currently this is a Windows only application.</span>
-								<span class="tq">A game that is supported won't work!</span>
-								<span class="ta">Please check the <a href="compatibility.html">Compatibility</a> page for specific game information.</span>
-								<span class="tq">Why isn't this project open source?</span>
-								<span class="ta">There are plans to fully open source this project, however the timeline for that is not set.</span>
-								<span class="tq">What happens to Patreon funds?</span>
-								<span class="ta">All support from Patreons goes toward development. This is to acquire hardware and other means of research. No funds are kept personally by any the developers.</span>
-								<span class="tq">My issue isn't covered here!</span>
-                                <span class="ta">Please join the TeknoParrot <a href="https://discord.gg/bntkyXZ" target="_blank">Discord</a> and bring your problem to the help channel. We have a lot of folks ready to help you out.</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tekno-space">
-                    <div class="col-md-12">
-                        <div class="tekno-box">
-                            <span class="tbox-header">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <span class="tbox-header-text">Disclaimer</span>
-                            </span>
-                            <span class="tbox-content">
-                                This site <span style="font-weight: bold;">DOES NOT</span>, and <span style="font-weight: bold;">WILL NEVER</span>, host or link to any game files or other copyrighted materials.<br /><br >
-                                Thanks to Reaver, NTAuthority, avail, nzgamer41, Nezarn, nibs, Boomslangnz, Pooterman, Patreons, and all community members who support this project.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+			</div>
+			
+			<div class="col-md-4">
+				<div class="tekno-box h-100">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-desktop"></i></i>Hardware Support</p>
+					</div>
+					<div class="tekno-box-content" style="height: 92%;">
+						<p>
+							TeknoParrot currently runs games from a wide variety of arcade hardware:
+						</p>
+						<ul>
+							<li>Examu eX-Board</li>
+							<li>GAELCO 3D Hardware</li>
+							<li>Global VR PC Based</li>
+							<li>Konami PC Based</li>
+							<li>Namco System ES3 (A/B/X)</li>
+							<li>Namco System N2</li>
+							<li>Raw Thrills PC Based</li>
+							<li>SEGA Europa-R</li>
+							<li>SEGA Lindbergh Yellow</li>
+							<li>SEGA Lindbergh Red/Red EX</li>
+							<li>SEGA Nu (Vanilla/1.1/2/SX/SX 1.1)</li>
+							<li>SEGA PC Based</li>
+							<li>SEGA RingEdge</li>
+							<li>SEGA RingEdge 2</li>
+							<li>SEGA RingWide</li>
+							<li>Taito NESiCAxLive</li>
+							<li>Taito Type X/X+</li>
+							<li>Taito Type X2</li>
+							<li>Taito Type X3</li>
+							<li>Taito Type X Zero</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tekno-box" style="margin-bottom: 15px;">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-exclamation-triangle"></i>Disclaimer</p>
+					</div>
+					<div class="tekno-box-content">
+						<p>
+							This site <span style="font-weight: bold;">DOES NOT</span>, and <span style="font-weight: bold;">WILL NEVER</span>, host 
+							or link to any game files or other copyrighted materials.
+						</p>
+						<p>
+							Thanks to Reaver, NTAuthority, avail, nzgamer41, Nezarn, nibs, Boomslangnz, Pooterman, Patreons, and all 
+							community members who support this project.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    </main>
 
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
