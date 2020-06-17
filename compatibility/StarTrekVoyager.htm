@@ -122,7 +122,24 @@
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
 						<ul>
-							<li>Game executable is "trek.e4"</li>
+							<li>Starting with 'voyager.chd'</li>
+							<li>Get 'chdman.exe' from a <a href="https://www.mamedev.org/" target="_blank">MAME</a> release package</li>
+							<li>Open a cmd prompt, navigate to folder where 'chdman.exe' and 'voyager.chd' is</li>
+							<li>Use this command: chdman extracthd --input voyager.chd --output voyager.img</li>
+							<li>Wait for extract..."Extraction complete"</li>
+							<li>With a program like 7-Zip, open 'voyager.img' and extract '0.img', '2.img', and '3.img'</li>
+							<li>You can ignore '1.img' and '4'</li>
+							<li>Create a new folder somewhere and name it something like "Star Trek Voyager"</li>
+							<li>
+								With a program like 7-Zip, right click '3.img' and extract 'stv' folder into your 'Star Trek Voyager' folder
+								(you may need to run 7-Zip as administator)
+							</li>
+							<li>If it yells at you about something, just choose "Yes to all", also ignore any extract warnings</li>
+							<li>With a program like 7-Zip, open '0.img' and navigate to 'home > rocky > stv'</li>
+							<li>Extract contents of 'stv' folder to your 'Star Trek Voyager' folder (you may need to run 7-Zip as administator)</li>
+							<li>With a program like 7-Zip, open '2.img' and open 'stv' folder</li>
+							<li>Extract contents of 'stv' folder to your 'Star Trek Voyager' folder (you may need to run 7-Zip as administator)</li>
+							<li>Game executable is 'trek.e4' found in your 'Star Trek Voyager' folder</li>
 						</ul>
 					</div>
 				</div>
@@ -138,6 +155,8 @@
 					<div class="tekno-box-content">
 						<p class="qaq">Sound issues</p>
 						<p class="qaa">Sound emulation is still missing music support, but don't doubt Harm's genius!</p>
+						<p class="qaq">Game runs too fast</p>
+						<p class="qaa">Game is made to run only 30fps, you must limit the fps with RTSS (or similar) or the game will run 2x speed.</p>
 					</div>
 				</div>
 			</div>

@@ -22,23 +22,23 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-tekno">
-      <a class="navbar-brand" href="../index.html"><img src="../img/teknoparrot-logo-small.png" /></a>
+      <a class="navbar-brand" href="/index.html"><img src="/img/teknoparrot-logo-small.png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="nav-link" href="/index.html"><i class="fas fa-home"></i>Home</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="../getstarted.html"><i class="fas fa-tasks"></i>Get Started</a>
+            <a class="nav-link" href="/getstarted.html"><i class="fas fa-tasks"></i>Get Started</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
+            <a class="nav-link" href="/compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="../downloads.html"><i class="fas fa-download"></i>Downloads</a>
+            <a class="nav-link" href="/downloads.html"><i class="fas fa-download"></i>Downloads</a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="https://www.reddit.com/r/teknoparrot/" target="_blank"><i class="fab fa-reddit"></i>Reddit</a>
@@ -74,10 +74,16 @@
 							<span style="font-weight: bold;">Game Title: </span><br />Tokyo Cop
 						</p>
 						<p>
-							<span style="font-weight: bold;">Hardware: </span><br />
+							<span style="font-weight: bold;">Hardware: </span><br />GAELCO 3D Hardware
 						</p>
 						<p>
 							<span style="font-weight: bold;">Game Info: </span><br />
+							A driving game where the player assumes the role of a cop going after 
+							dangerous criminals in Tokyo from pickpockets to the most wanted 
+							throughout four districts: Ginza, Hibiya, Shinjuku and Shibuya. A 
+							promotion is earned based on how quickly criminals are captured. 
+							Different cars are available in each round. The game also has four 
+							selectable characters: Isumu, Kazu, Reika and Junko.
 						</p>
 					</div>
 				</div>
@@ -93,11 +99,11 @@
 					<div class="tekno-box-content gpu-support">
 						<div class="row" style="text-align: center;">
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-check-circle issues"></i>
 								<p>Nvidia</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-check-circle issues"></i>
 								<p>AMD</p>
 							</div>
 							<div class="col-md-4">
@@ -118,6 +124,24 @@
 					</div>
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
+						<ul>
+							<li>Starting with 'tokyocop.chd'</li>
+							<li>Get 'chdman.exe' from a <a href="https://www.mamedev.org/" target="_blank">MAME</a> release package</li>
+							<li>Open a cmd prompt, navigate to folder where 'chdman.exe' and 'tokyocop.chd' is</li>
+							<li>Use this command: chdman extracthd --input tokyocop.chd --output tokyocop.img</li>
+							<li>Wait for extract..."Extraction complete"</li>
+							<li>With a program like 7-Zip, open 'tokyocop.img' and extract '0.img'</li>
+							<li>You can ignore '1.img' and '2.img'</li>
+							<li>With a program like 7-Zip, right click '0.img' and choose "Extract here"</li>
+							<li>If it yells at you about something, just choose "Yes to all", also ignore any extract warnings</li>
+							<li>Open 'home > joc2001 > joc2001 > Sources > gameport > linux' folder</li>
+							<li>Copy 'gameport' to 'home > joc2001 > joc2001 > salidas' folder</li>
+							<li>
+								The 'salidas' folder is the game folder you need, so rename it to 'Tokyo Cop' or so. 
+								copy this folder to wherever you keep your TeknoParrot games. You can safely delete everything else.
+							</li>
+							<li>Game executable is 'gameport' now found in game's root folder ('salidas', which you hopefully renamed)</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -130,6 +154,10 @@
 						<p><i class="fas fa-exclamation-circle"></i>Common Issues / Questions</p>
 					</div>
 					<div class="tekno-box-content">
+						<p class="qaq">AMD crash</p>
+						<p class="qaa">Make sure you enabled 'General - AMDCrashFix' in 'GAME SETTINGS'</p>
+						<p class="qaq">Graphically messed up characters in-game</p>
+						<p class="qaa">Currently there is some graphical corruption, there is no fix at the moment.</p>
 					</div>
 				</div>
 			</div>
@@ -142,9 +170,9 @@
 						<p><i class="fas fa-times"></i>Features Not Emulated</p>
 					</div>
 					<div class="tekno-box-content">
-						<p>
-							&nbsp;
-						</p>
+						<ul>
+							<li>Networking may or may not be working. Game might require specific IP range. Could work but no confirmed cases.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
