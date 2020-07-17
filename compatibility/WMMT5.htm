@@ -22,23 +22,23 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-tekno">
-      <a class="navbar-brand" href="../index.html"><img src="../img/teknoparrot-logo-small.png" /></a>
+      <a class="navbar-brand" href="/index.html"><img src="/img/teknoparrot-logo-small.png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="nav-link" href="/index.html"><i class="fas fa-home"></i>Home</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="../getstarted.html"><i class="fas fa-tasks"></i>Get Started</a>
+            <a class="nav-link" href="/getstarted.html"><i class="fas fa-tasks"></i>Get Started</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
+            <a class="nav-link" href="/compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="../downloads.html"><i class="fas fa-download"></i>Downloads</a>
+            <a class="nav-link" href="/downloads.html"><i class="fas fa-download"></i>Downloads</a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="https://www.reddit.com/r/teknoparrot/" target="_blank"><i class="fab fa-reddit"></i>Reddit</a>
@@ -74,10 +74,15 @@
 							<span style="font-weight: bold;">Game Title: </span><br />Wangan Midnight Maximum Tune 5
 						</p>
 						<p>
-							<span style="font-weight: bold;">Hardware: </span><br />
+							<span style="font-weight: bold;">Hardware: </span><br />Namco ES3X
 						</p>
 						<p>
 							<span style="font-weight: bold;">Game Info: </span><br />
+							Wangan Midnight Maximum Tune 5 (also known as Maximum Tune 5 (named in the U.S.), 
+							or simply Maxi 5) is an arcade racing video game developed and published by 
+							Namco and based on the Wangan Midnight manga. It is the fifth game in the Wangan 
+							Midnight arcade game series. This is also the first game in the Wangan Midnight 
+							series to be officially relased in North America since Wangan Midnight Maximum Tune 3DX+.
 						</p>
 					</div>
 				</div>
@@ -93,15 +98,15 @@
 					<div class="tekno-box-content gpu-support">
 						<div class="row" style="text-align: center;">
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-check-circle great"></i>
 								<p>Nvidia</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-check-circle great"></i>
 								<p>AMD</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-check-circle great"></i>
 								<p>Intel</p>
 							</div>
 						</div>
@@ -118,6 +123,9 @@
 					</div>
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
+						<ul>
+							<li>Executable is "wmnr5.exe" found in game's root folder.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -130,6 +138,28 @@
 						<p><i class="fas fa-exclamation-circle"></i>Common Issues / Questions</p>
 					</div>
 					<div class="tekno-box-content">
+						<p class="qaq">I am stuck at "Connecting to Wangan Terminal"</p>
+						<p class="qaa">
+							Make sure TerminalEmulator is ticked, and that NetworkAdapterIP is set to 0.0.0.0 
+							unless you're playing online. If you have too many network adapters installed on your PC,
+							you may need to remove/disable them except for your primary network adapter.
+						</p>
+						<p class="qaq">Why is my car drifting to the side constantly?</p>
+						<p class="qaa">Go into the TEST menu and calibrate your steering.</p>
+						<p class="qaq">What is TerminalMode?</p>
+						<p class="qaa">
+							TerminalMode makes the game emulate the Terminal function rather 
+							then the racing cabinet function. With WMMT5, the cabinets all get 
+							their information like closing times and whether they're set to 
+							FreePlay or not from the Wangan Terminal cabinet, a standup machine 
+							that has a touchscreen that's used for customising cars on a 
+							Banapassport. Since we don't support Banapassport for WMMT5, 
+							TerminalMode has no use except for if you want to run the game in 
+							Event Mode with multiple machines, which can actually be emulated 
+							by our TerminalEmulator now.
+						</p>
+						<p class="qaq">What does the text in the yellow box mean?</p>
+						<p class="qaa">It's just informing you that Banapassport cannot be used at this time.</p>
 					</div>
 				</div>
 			</div>
@@ -142,9 +172,11 @@
 						<p><i class="fas fa-times"></i>Features Not Emulated</p>
 					</div>
 					<div class="tekno-box-content">
-						<p>
-							&nbsp;
-						</p>
+						<ul>
+							<li>Full Banapass (saving)</li>
+							<li>Online Ghost Mode</li>
+							<li>Terminal Touchscreen</li>
+						</ul>
 					</div>
 				</div>
 			</div>
