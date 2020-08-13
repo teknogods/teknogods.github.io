@@ -86,12 +86,12 @@ body {
 	width: 100%;
 	display: block;
 	border-radius: 3px;
-	color: #27aae1;
+	color: #1c75bc;
 	padding: 5px 0;
 }
 
 #quickTable td a:hover {
-	background-color: #27aae1;
+	background-color: #1c75bc;
 	color: #fff;
 	text-decoration: none;
 }
