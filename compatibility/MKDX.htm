@@ -17,6 +17,9 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/navbar-top-fixed.css" rel="stylesheet">
+	
+	<!-- MKDX Server Checker -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
 
   <body>
@@ -133,6 +136,29 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tekno-box">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-globe"></i>Server Status</p>
+					</div>
+					<div class="tekno-box-content">
+						<p class="qaq">Card Saving</p>
+						<p class="qaa" id="mkdx-status">Loading...</p>
+						<script type="text/javascript">
+							$.getJSON({url: 'https://harm.io/mkdx/json.php', timeout: 5000, cache: false}).done(function(json) {
+								console.log(json);
+								if (json.online)
+									$('#mkdx-status').html("Online");
+								else
+									$('#mkdx-status').html("Offline");
+							});;
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
 	
 		<div class="row">
 			<div class="col-md-12">
@@ -205,7 +231,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
