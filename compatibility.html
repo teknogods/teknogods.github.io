@@ -159,12 +159,67 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="tekno-box">
-					<table class="table table-hover">
-						<thead>
+					<div class="tekno-box-header">
+						<p><i class="fas fa-gamepad"></i>Games</p>
+					</div>
+					<div class="tekno-box-content">
+
+						<div class="row">
+							<div class="col-12 col-md-6">
+
+								<p><strong>Columns</strong></p>
+
+								<div class="form-group">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input show-column" type="checkbox" disabled checked>
+										<label class="form-check-label">Name</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input show-column" type="checkbox" disabled checked>
+										<label class="form-check-label">Status</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input show-column" type="checkbox" data-show-column="genre">
+										<label class="form-check-label">Genre</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input show-column" type="checkbox" data-show-column="lan">
+										<label class="form-check-label">LAN</label>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-12 col-md-6">
+
+								<p><strong>Filters</strong></p>
+
+								<div class="form-inline">
+									<div class="form-group mr-3">
+										<label class="form-check-label mr-1">Genre</label>
+										<select class="form-control form-control-sm filter-column" data-filter-column="genre">
+											<option selected></option>
+										</select>
+									</div>
+
+									<div class="form-group mr-3">
+										<label class="form-check-label mr-1">LAN</label>
+										<select class="form-control form-control-sm filter-column" data-filter-column="lan">
+											<option selected></option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="table-responsive">
+					<table class="table table-hover games">
+						<thead class="bg-tekno">
 							<tr>
-								<th scope="col"><i class="fas fa-gamepad"></i></th>
-								<th scope="col">Game Title</th>
+								<th scope="col"></th>
+								<th scope="col">Name</th>
 								<th scope="col">Status</th>
+								<th scope="col" data-col="genre" class="d-none">Genre</th>
+								<th scope="col" data-col="lan" class="d-none">LAN</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -176,7 +231,7 @@
 						<tr class="click-row" data-href="compatibility/AkaiKatanaShinNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/AkaiKatanaShinNesica.png" /></th>
 							<td>Akai Katana Shin for NESICAxLive</td>
-							<td><i class="fas fa-check-circle perfect"></td>
+							<td><i class="fas fa-check-circle perfect"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/AquapazzaAquaplusDreamMatch.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/AquapazzaAquaplusDreamMatch.png" /></th>
@@ -392,6 +447,8 @@
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GRID.png" /></th>
 							<td>GRID</td>
 							<td><i class="fas fa-check-circle great"></i></td>
+							<td data-col="genre" data-value="Driving" class="d-none">Driving</td>
+							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GrooveCoaster2.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GrooveCoaster2.png" /></th>
@@ -402,6 +459,8 @@
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GtiClub3.png" /></th>
 							<td>GTI Club: Supermini Festa!</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
+							<td data-col="genre" data-value="Driving" class="d-none">Driving</td>
+							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GGXrd.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GGXrd.png" /></th>
@@ -960,6 +1019,9 @@
 						</tr>
 						</tbody>
 					</table>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -994,9 +1056,84 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- Clickable table rows -->
 	<script>
+		function filter() {
+			$('table.games tbody tr').addClass('d-none');
+
+			var criteria = [];
+
+			$('select.filter-column').each(function() {
+				if($(this).val() != '') {
+					criteria[$(this).data('filter-column')] = $(this).val();
+				}
+			});
+
+			$('table.games tbody tr').each(function() {
+				var show = true;
+
+				for(var column in criteria) {
+					if($('td[data-col="' + column + '"]', this).length == 0) {
+						show = false;
+						break;
+					}
+
+					if($('td[data-col="' + column + '"]', this).data('value') != criteria[column]) {
+						show = false;
+						break;
+					}
+				}
+
+				if(show) {
+					$(this).removeClass('d-none');
+				}
+			});
+
+
+			/*if($(this).val() == '') {
+
+			} else {
+				$('table.games tbody tr').addClass('d-none');
+
+				$('[data-col="' + $(this).data('filter-column') + '"][data-value="' + $(this).val() + '"]').closest('tr').removeClass('d-none');
+			}*/
+		}
+
 		$(document).ready(function($) {
 			$(".click-row").click(function() {
 				window.document.location = $(this).data("href");
+			});
+
+			var filters = [];
+
+			$('td[data-col]').each(function() {
+				if(typeof filters[$(this).data('col')] === 'undefined') {
+					filters[$(this).data('col')] = [];
+				}
+
+				if(jQuery.inArray($(this).data('value'), filters[$(this).data('col')]) == -1) {
+					filters[$(this).data('col')].push($(this).data('value'));
+				}
+			});
+
+			for(var column in filters) {
+				filters[column].sort();
+
+				for(var i=0; i<filters[column].length; i++) {
+					$('select.filter-column[data-filter-column="' + column + '"]').append(new Option(filters[column][i], filters[column][i]));
+				}
+			}
+
+			$('input.show-column').change(function(e) {
+				var selector = '[data-col="' + $(this).data('show-column') + '"]';
+
+				if($(this).is(':checked')) {
+					$(selector).removeClass('d-none');
+				} else {
+					$(selector).addClass('d-none');
+				}
+			});
+
+			$('select.filter-column').change(function(e) {
+				filter();
 			});
 		});
 	</script>

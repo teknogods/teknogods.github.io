@@ -235,6 +235,9 @@ p, li {
 .row {
 	margin-top: 20px;
 }
+.row .row {
+	margin-top: 0;
+}
 
 .perfect {
 	color: blue;
