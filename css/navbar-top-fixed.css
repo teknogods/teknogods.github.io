@@ -120,6 +120,9 @@ table tbody {
 table tbody i {
 	font-size: 40px;
 }
+table tbody td[data-col] i {
+	font-size: 1.25rem;
+}
 
 table tbody tr {
 	background-color: #fff;
