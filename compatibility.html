@@ -183,6 +183,10 @@
 										<label class="form-check-label">Genre</label>
 									</div>
 									<div class="form-check form-check-inline">
+										<input class="form-check-input show-column" type="checkbox" data-show-column="players">
+										<label class="form-check-label">Local Players</label>
+									</div>
+									<div class="form-check form-check-inline">
 										<input class="form-check-input show-column" type="checkbox" data-show-column="lan">
 										<label class="form-check-label">LAN</label>
 									</div>
@@ -197,6 +201,13 @@
 									<div class="form-group mr-3">
 										<label class="form-check-label mr-1">Genre</label>
 										<select class="form-control form-control-sm filter-column" data-filter-column="genre">
+											<option selected></option>
+										</select>
+									</div>
+
+									<div class="form-group mr-3">
+										<label class="form-check-label mr-1">Local Players</label>
+										<select class="form-control form-control-sm filter-column" data-filter-column="players">
 											<option selected></option>
 										</select>
 									</div>
@@ -221,6 +232,7 @@
 								<th scope="col">Name</th>
 								<th scope="col">Status</th>
 								<th scope="col" data-col="genre" class="d-none">Genre</th>
+								<th scope="col" data-col="players" class="d-none">Local Players</th>
 								<th scope="col" data-col="lan" class="d-none">LAN</th>
 							</tr>
 						</thead>
@@ -230,6 +242,7 @@
 							<td>After Burner Climax</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/AkaiKatanaShinNesica.htm">
@@ -237,6 +250,7 @@
 							<td>Akai Katana Shin for NESICAxLive</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/AquapazzaAquaplusDreamMatch.htm">
@@ -244,6 +258,7 @@
 							<td>Aquapazza: Aquaplus Dream Match</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ArcanaHeart2Nesica.htm">
@@ -251,6 +266,7 @@
 							<td>Arcana Heart 2 for NESICAxLive</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ArcanaHeart3Exboard.htm">
@@ -258,6 +274,7 @@
 							<td>Arcana Heart 3 (eX-Board)</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-b" class="click-row" data-href="compatibility/ArcanaHeart3Nesica.htm">
@@ -265,6 +282,7 @@
 							<td>Arcana Heart 3 LOVEMAX SIXSTARS!!!!!!</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Batman.htm">
@@ -272,6 +290,7 @@
 							<td>Batman</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BattleFantasia.htm">
@@ -279,6 +298,7 @@
 							<td>Battle Fantasia</td>
 							<td><i class="fas fa-minus-circle unplayable"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BattleGear4.htm">
@@ -286,6 +306,7 @@
 							<td>Battle Gear 4</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BattleGear4Tuned.htm">
@@ -293,6 +314,7 @@
 							<td>Battle Gear 4 Tuned</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BladeArcus.htm">
@@ -300,6 +322,7 @@
 							<td>Blade Arcus</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BladeStrangers.htm">
@@ -307,6 +330,7 @@
 							<td>Blade Strangers</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BlazBlueCalaminityTrigger.htm">
@@ -314,6 +338,7 @@
 							<td>BlazBlue: Calamity Trigger</td>
 							<td><i class="fas fa-minus-circle unplayable"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BBCF.htm">
@@ -321,6 +346,7 @@
 							<td>BlazBlue: Central Fiction</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BBCP.htm">
@@ -328,6 +354,7 @@
 							<td>BlazBlue: Chronophantasma</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BlazBlueContinuumShift.htm">
@@ -335,6 +362,7 @@
 							<td>BlazBlue: Continuum Shift</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/BlazBlueContinuumShift2.htm">
@@ -342,6 +370,7 @@
 							<td>BlazBlue: Continuum Shift II</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-c" class="click-row" data-href="compatibility/BorderBreakScramble.htm">
@@ -349,6 +378,7 @@
 							<td>Border Break Scramble</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/CaladriusAC.htm">
@@ -356,6 +386,7 @@
 							<td>Caladrius AC</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ChaosBreaker.htm">
@@ -363,6 +394,7 @@
 							<td>Chaos Breaker</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/CC.htm">
@@ -370,6 +402,7 @@
 							<td>Chaos Code</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ChaosCodeNSOC103.htm">
@@ -377,6 +410,7 @@
 							<td>Chaos Code: New Sign of Catastrophe v1.03.00</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ChaseHQ2.htm">
@@ -384,6 +418,7 @@
 							<td>Chase H.Q. 2</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/CSNEO.htm">
@@ -391,6 +426,7 @@
 							<td>Counter-Strike Neo</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-d" class="click-row" data-href="compatibility/CrimzonClover.htm">
@@ -398,6 +434,7 @@
 							<td>Crimzon Clover for NESICAxLive</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/DaemonBrideExboard.htm">
@@ -405,6 +442,7 @@
 							<td>Daemon Bride (eX-Board)</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/DariusBurst.htm">
@@ -412,6 +450,7 @@
 							<td>Dariusburst: Another Chronicle</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Daytona3.htm">
@@ -419,6 +458,7 @@
 							<td>Daytona Championship USA</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/DOA5.htm">
@@ -426,6 +466,7 @@
 							<td>Dead or Alive 5 Ultimate Arcade</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/FightingClimax.htm">
@@ -433,6 +474,7 @@
 							<td>Dengeki Bunko: Fighting Climax</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/DirtyDrivin.htm">
@@ -440,6 +482,7 @@
 							<td>Dirty Drivin'</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/DoNotFallRunforYourDrink.htm">
@@ -447,6 +490,7 @@
 							<td>Do Not Fall: Run For Your Drink</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/DragonDanceNesica.htm">
@@ -454,6 +498,7 @@
 							<td>Dragon Dance for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-e" class="click-row" data-href="compatibility/SDR.htm">
@@ -461,6 +506,7 @@
 							<td>Dream Raiders</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ElevatorAction.htm">
@@ -468,6 +514,7 @@
 							<td>Elevator Action for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-f" class="click-row" data-href="compatibility/EnEinsPerfektewelt.htm">
@@ -475,6 +522,7 @@
 							<td>En-Eins Perfektewelt for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/FightingClimaxIgnition.htm">
@@ -482,6 +530,7 @@
 							<td>Fighting Climax Ignition</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-g" class="click-row" data-href="compatibility/FR.htm">
@@ -489,6 +538,7 @@
 							<td>Ford Racing: Full Blown</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="1" class="d-none">1</td>
 							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i> (2-?)</td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GaelcoChampionshipTuningRace.htm">
@@ -496,6 +546,7 @@
 							<td>Gaelco Championship Tuning Race</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ArcadeLove.htm">
@@ -503,6 +554,7 @@
 							<td>Ge-Sen Love: Plus Pengo!</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GSEVO.htm">
@@ -510,6 +562,7 @@
 							<td>Ghost Squad Evolution</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GigaWingGenerations.htm">
@@ -517,6 +570,7 @@
 							<td>GigaWing Generations</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/PowerInstinctV.htm">
@@ -524,6 +578,7 @@
 							<td>Gouketsuji Ichizoku: Senzo Kuyou (Taito Type X2)</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Goketsuji.htm">
@@ -531,6 +586,7 @@
 							<td>Gouketsuji Ichizoku: Senzo Kuyou for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GRID.htm">
@@ -538,6 +594,7 @@
 							<td>GRID</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="1" class="d-none">1</td>
 							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i> (2-?)</td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GrooveCoaster2.htm">
@@ -545,6 +602,7 @@
 							<td>Groove Coaster 2: Heavenly Festival</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GtiClub3.htm">
@@ -552,6 +610,7 @@
 							<td>GTI Club: Supermini Festa!</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i> (4)</td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GGXrd.htm">
@@ -559,6 +618,7 @@
 							<td>Guilty Gear Xrd REV2</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GGXrdSIGN.htm">
@@ -566,6 +626,7 @@
 							<td>Guilty Gear Xrd -SIGN-</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GGXX.htm">
@@ -573,6 +634,7 @@
 							<td>Guilty Gear XX Accent Core Plus R</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-h" class="click-row" data-href="compatibility/GHA.htm">
@@ -580,6 +642,7 @@
 							<td>Guitar Hero Arcade</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/H2Overdrive.htm">
@@ -587,6 +650,7 @@
 							<td>H2Overdrive</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Homura.htm">
@@ -594,6 +658,7 @@
 							<td>Homura for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-i" class="click-row" data-href="compatibility/HyperStreetFighterII.htm">
@@ -601,6 +666,7 @@
 							<td>Hyper Street Fighter II - The Anniversary Edition for NESICAxLive</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Ikaruga.htm">
@@ -608,6 +674,7 @@
 							<td>Ikaruga for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ID4Exp.htm">
@@ -615,6 +682,7 @@
 							<td>Initial D: Arcade Stage 4 (Export)</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ID4Jap.htm">
@@ -622,6 +690,7 @@
 							<td>Initial D: Arcade Stage 4 (Japanese)</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ID5.htm">
@@ -629,6 +698,7 @@
 							<td>Initial D: Arcade Stage 5 (Export)</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ID6.htm">
@@ -636,6 +706,7 @@
 							<td>Initial D: Arcade Stage 6 Double Ace</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ID7.htm">
@@ -643,6 +714,7 @@
 							<td>Initial D: Arcade Stage 7 Double Ace Cross</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ID8.htm">
@@ -650,6 +722,7 @@
 							<td>Initial D: Arcade Stage 8 Infinity</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-j" class="click-row" data-href="compatibility/IDZ.htm">
@@ -657,6 +730,7 @@
 							<td>Initial D: Arcade Stage Zero (Third-Party - SegaTools)</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-k" class="click-row" data-href="compatibility/JusticeLeague.htm">
@@ -664,6 +738,7 @@
 							<td>Justice League - Heroes United</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KODrive.htm">
@@ -671,6 +746,7 @@
 							<td>K.O. Drive (Prototype)</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFightersXIIIClimax.htm">
@@ -678,6 +754,7 @@
 							<td>King of Fighters XIII Climax</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFightersXIIIClimaxNesica.htm">
@@ -685,6 +762,7 @@
 							<td>King of Fighters XIII Climax (Nesica)</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFightersMaximumImpactRegulationA.htm">
@@ -692,6 +770,7 @@
 							<td>KOF Maximum Impact Regulation A</td>
 							<td><i class="fas fa-minus-circle unplayable"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFightersSkyStage.htm">
@@ -699,6 +778,7 @@
 							<td>KOF Sky Stage</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-l" class="click-row" data-href="compatibility/Koihime.htm">
@@ -706,6 +786,7 @@
 							<td>Koihime Enbu</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/LGI3D.htm">
@@ -713,6 +794,7 @@
 							<td>Let's Go Island 3D: Lost on the Island of Tropics</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="2" class="d-none">2</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/LGI.htm">
@@ -720,6 +802,7 @@
 							<td>Let's Go Island: Lost on the Island of Tropics</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="2" class="d-none">2</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/LGJS.htm">
@@ -727,6 +810,7 @@
 							<td>Let's Go Jungle Special</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="2" class="d-none">2</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/LGJ.htm">
@@ -734,6 +818,7 @@
 							<td>Let's Go Jungle: Lost on the Island of Spice</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="2" class="d-none">2</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/LGS.htm">
@@ -741,6 +826,7 @@
 							<td>Let's Go Safari</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-m" class="click-row" data-href="compatibility/LuigisMansion.htm">
@@ -748,6 +834,7 @@
 							<td>Luigi's Mansion Arcade</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/MS.htm">
@@ -755,6 +842,7 @@
 							<td>MachStorm</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/MagicalBeat.htm">
@@ -762,6 +850,7 @@
 							<td>Magical Beat</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/MaiMaiGreen.htm">
@@ -769,6 +858,7 @@
 							<td>maimai GreeN</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/MKDXUSA.htm">
@@ -776,6 +866,7 @@
 							<td>Mario Kart DX USA</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/MKDX.htm">
@@ -783,6 +874,7 @@
 							<td>Mario Kart Arcade GP DX</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i> (2-?)</td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/MeltyBloodRE2.htm">
@@ -790,6 +882,7 @@
 							<td>Melty Blood (RE2)</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-n" class="click-row" data-href="compatibility/MB.htm">
@@ -797,6 +890,7 @@
 							<td>Melty Blood: Actress Again - Current Code</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-o" class="click-row" data-href="compatibility/NitroplusBlasterz.htm">
@@ -804,6 +898,7 @@
 							<td>Nitro+ Blasterz: Heroines Infinite Duel</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/OG.htm">
@@ -811,6 +906,7 @@
 							<td>Operation G.H.O.S.T.</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-p" class="click-row" data-href="compatibility/or2spdlx.htm">
@@ -818,6 +914,7 @@
 							<td>OutRun 2 SP SDX</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i> (2-?)</td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Persona4A.htm">
@@ -825,6 +922,7 @@
 							<td>P4U: Persona 4 The Ultimate in Mayonaka Arena</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Persona4U.htm">
@@ -832,6 +930,7 @@
 							<td>P4UU: Persona 4 The Ultimate Ultra Suplex Hold</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/PhantomBreaker.htm">
@@ -839,6 +938,7 @@
 							<td>Phantom Breaker: Another Code</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/PokkenTournament.htm">
@@ -846,6 +946,7 @@
 							<td>Pokkén Tournament</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ProjectDiva.htm">
@@ -853,6 +954,7 @@
 							<td>Project Diva Arcade</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/PPQ.htm">
@@ -860,6 +962,7 @@
 							<td>Puyo Puyo!! Quest Arcade</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-r" class="click-row" data-href="compatibility/PuzzleBobble.htm">
@@ -867,6 +970,7 @@
 							<td>Puzzle Bobble for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/RaidenIII.htm">
@@ -874,6 +978,7 @@
 							<td>Raiden III</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/RaidenIIINesica.htm">
@@ -881,6 +986,7 @@
 							<td>Raiden III for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/RaidenIV.htm">
@@ -888,6 +994,7 @@
 							<td>Raiden IV</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/RaidenIVNesica.htm">
@@ -895,6 +1002,7 @@
 							<td>Raiden IV for NESICAxLive</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Rambo.htm">
@@ -902,6 +1010,7 @@
 							<td>Rambo</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="2" class="d-none">2</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/RastanSaga.htm">
@@ -909,6 +1018,7 @@
 							<td>Rastan Saga for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-s" class="click-row" data-href="compatibility/R-Tuned.htm">
@@ -916,6 +1026,7 @@
 							<td>R-Tuned: Ultimate Street Racing</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Broken" class="d-none"><i class="fas fa-times text-danger"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SamuraiSpiritsSen.htm">
@@ -923,6 +1034,7 @@
 							<td>Samurai Spirits Sen</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SchoolOfRagnarok.htm">
@@ -930,6 +1042,7 @@
 							<td>School of Ragnarok</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/GG.htm">
@@ -937,6 +1050,7 @@
 							<td>SEGA Golden Gun</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/segartv.htm">
@@ -944,6 +1058,7 @@
 							<td>SEGA Race TV</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Broken" class="d-none"><i class="fas fa-times text-danger"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SRC.htm">
@@ -951,6 +1066,7 @@
 							<td>SEGA Racing Classic</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SR3.htm">
@@ -958,6 +1074,7 @@
 							<td>SEGA Rally 3</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i> (2-?)</td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SenkoNoRondeDuo.htm">
@@ -965,6 +1082,7 @@
 							<td>Senko no Ronde: DUO - Dis-United Order</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SenkoNoRondeDuoNesica.htm">
@@ -972,6 +1090,7 @@
 							<td>Senko no Ronde: DUO - Dis-United Order for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Shigami3.htm">
@@ -979,6 +1098,7 @@
 							<td>Shikigami no Shiro III</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ShiningForceCrossElysion.htm">
@@ -986,6 +1106,7 @@
 							<td>Shining Force: Cross Elysion</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ShiningForceCrossExlesia.htm">
@@ -993,6 +1114,7 @@
 							<td>Shining Force: Cross Exlesia</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/ShiningForceCrossRaid.htm">
@@ -1000,6 +1122,7 @@
 							<td>Shining Force: Cross Raid</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SSASR.htm">
@@ -1007,6 +1130,7 @@
 							<td>Sonic & SEGA All-Stars Racing</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SpaceInvaders.htm">
@@ -1014,6 +1138,7 @@
 							<td>Space Invaders for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SpicaAdventure.htm">
@@ -1021,6 +1146,7 @@
 							<td>Spica Adventure</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/StarTrekVoyager.htm">
@@ -1028,6 +1154,7 @@
 							<td>Star Trek Voyager</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/StarWars.htm">
@@ -1035,6 +1162,7 @@
 							<td>STAR WARS: Battle Pod</td>
 							<td><i class="fas fa-check-circle issues"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/StraniaTheStellaMachina.htm">
@@ -1042,6 +1170,7 @@
 							<td>Strania -The Stella Machine-</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/StreetFighterIII3rdStrike.htm">
@@ -1049,6 +1178,7 @@
 							<td>Street Fighter III: 3rd Strike - Fight for the Future for NESICAxLive</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/StreetFighterZero3.htm">
@@ -1056,6 +1186,7 @@
 							<td>Street Fighter Zero 3 for NESiCAxLive</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SuggoiArcanaHeart2Nesica.htm">
@@ -1063,6 +1194,7 @@
 							<td>Suggoi! Arcana Heart 2 for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/FNFSB2.htm">
@@ -1070,6 +1202,7 @@
 							<td>Super Bikes 2</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SuperStreetFighterIVArcadeEdition.htm">
@@ -1077,6 +1210,7 @@
 							<td>Super Street Fighter IV: Arcade Edition</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/SuperStreetFighterIVArcadeEditionEXP.htm">
@@ -1084,6 +1218,7 @@
 							<td>Super Street Fighter IV: Arcade Edition (Export)</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-t" class="click-row" data-href="compatibility/SuperStreetFighterIVArcadeEditionVer2012.htm">
@@ -1091,6 +1226,7 @@
 							<td>Super Street Fighter IV: Arcade Edition Ver. 2012</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/TaisenHotGimmick5.htm">
@@ -1098,6 +1234,7 @@
 							<td>Taisen Hot Gimmick 5: Mirai Eigou</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Tekken7.htm">
@@ -1105,6 +1242,7 @@
 							<td>Tekken 7</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="1" class="d-none">1</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Tekken7FR.htm">
@@ -1112,6 +1250,7 @@
 							<td>Tekken 7: Fated Retribution</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="1" class="d-none">1</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/TetrisTheGrandMaster3TerrorInstinct.htm">
@@ -1119,6 +1258,7 @@
 							<td>Tetris: The Grand Masters 3 - Terror-Instinct</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/FNF.htm">
@@ -1126,6 +1266,7 @@
 							<td>The Fast and the Furious</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/FNFDrift.htm">
@@ -1133,6 +1274,7 @@
 							<td>The Fast and the Furious: Drift</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/FNFSB.htm">
@@ -1140,6 +1282,7 @@
 							<td>The Fast and the Furious: Super Bikes</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/FNFSC.htm">
@@ -1147,6 +1290,7 @@
 							<td>The Fast and the Furious: SuperCars</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/HOTD4.htm">
@@ -1154,6 +1298,7 @@
 							<td>The House of the Dead 4</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="2" class="d-none">2</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFighters98UnlimitedMatch.htm">
@@ -1161,6 +1306,7 @@
 							<td>The King of Fighters '98: Ultimate Match</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFighters98UltimateMatchFinalEditionNesica.htm">
@@ -1168,6 +1314,7 @@
 							<td>The King of Fighters '98: Ultimate Match Final Edition for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFightersXII.htm">
@@ -1175,6 +1322,7 @@
 							<td>The King of Fighters XII</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/KingofFightersXIII.htm">
@@ -1182,6 +1330,7 @@
 							<td>The King of Fighters XIII</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/RumbleFish2Nesica.htm">
@@ -1189,6 +1338,7 @@
 							<td>The Rumble Fish 2 for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Theatrhythm.htm">
@@ -1196,6 +1346,7 @@
 							<td>Theatrhythm Final Fantasy: All-Star Carnival</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/TokyoCop.htm">
@@ -1203,6 +1354,7 @@
 							<td>Tokyo Cop</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Broken" class="d-none"><i class="fas fa-times text-danger"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/2Spicy.htm">
@@ -1210,6 +1362,7 @@
 							<td>Too Spicy</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="1" class="d-none">1</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/Transformers.htm">
@@ -1217,6 +1370,7 @@
 							<td>Transformers: Human Alliance</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter" class="d-none">Shooter</td>
+							<td data-col="players" data-value="2" class="d-none">2</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/TroubleWitches.htm">
@@ -1224,6 +1378,7 @@
 							<td>Trouble Witches AC</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-u" class="click-row" data-href="compatibility/TroubleWitchesNesica.htm">
@@ -1231,6 +1386,7 @@
 							<td>Trouble Witches AC for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/UltraStreetFighterIV.htm">
@@ -1238,6 +1394,7 @@
 							<td>Ultra Street Fighter IV</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter" class="d-none">Fighter</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/UDX.htm">
@@ -1245,6 +1402,7 @@
 							<td>Under Defeat HD+</td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/UnderNightInBirth.htm">
@@ -1252,6 +1410,7 @@
 							<td>Under Night In-Birth</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-v" class="click-row" data-href="compatibility/UnderNightInBirthExeLatest.htm">
@@ -1259,6 +1418,7 @@
 							<td>Under Night In-Birth Exe:Late[st]</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/VirtuaRLimit.htm">
@@ -1266,6 +1426,7 @@
 							<td>Valve Limit R</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/VampireSavior.htm">
@@ -1273,6 +1434,7 @@
 							<td>Vampire Savior: The Lord of Vampire for NESICAxLive</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/VF5B.htm">
@@ -1280,6 +1442,7 @@
 							<td>Virtua Fighter 5 (Version B)</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/VF5C.htm">
@@ -1287,6 +1450,7 @@
 							<td>Virtua Fighter 5 (Version C)</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/VT3.htm">
@@ -1294,6 +1458,7 @@
 							<td>Virtua Tennis 3</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr id="letter-w" class="click-row" data-href="compatibility/VT4.htm">
@@ -1301,6 +1466,7 @@
 							<td>Virtua Tennis 4</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/WackyRaces.htm">
@@ -1308,6 +1474,7 @@
 							<td>Wacky Races</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/WMMT5.htm">
@@ -1315,6 +1482,7 @@
 							<td>Wangan Midnight Maximum Tune 5</td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Available" class="d-none"><i class="fas fa-check text-success"></i> (2-?)</td>
 						</tr>
 						<tr id="letter-y" class="click-row" data-href="compatibility/SnoCross.htm">
@@ -1322,6 +1490,7 @@
 							<td>Winter X Games SnoCross</td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing" class="d-none">Racing</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						<tr class="click-row" data-href="compatibility/YugiohDT6U.htm">
@@ -1329,6 +1498,7 @@
 							<td>Yugioh 5DS Duel Terminal 6 (USA)</td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown" class="d-none">Unknown</td>
+							<td data-col="players" data-value="Unknown" class="d-none">Unknown</td>
 							<td data-col="lan" data-value="Unknown" class="d-none"><i class="fas fa-question text-secondary"></i></td>
 						</tr>
 						</tbody>
