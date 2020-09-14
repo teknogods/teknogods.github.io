@@ -130,6 +130,50 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tekno-box">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-network-wired"></i>LAN Networking (2-? Players)</p>
+					</div>
+					<div class="tekno-box-content">
+						<p>Setting up for LAN <strong>affects</strong> the ability for the Slave cabinets to run this game in standalone mode. The Master cabinet can continue to operate as it provides the Terminal emulation for itself and all Slaves.</p>
+
+						<p style="font-weight: bold;">Setup</p>
+						<ol>
+							<li>Edit the Game Settings within TeknoParrotUI.</li>
+							<li>
+								<strong>Master</strong> (1 designated cabinet)
+
+								<ul>
+									<li>Enable "TerminalEmulator" setting.</li>
+									<li>Set the "NetworkAdapterIP" network IP address to 0.0.0.0</li>
+								</ul>
+							</li>
+							<li>
+								<strong>Slave</strong> (all other cabinets)
+
+								<ul>
+									<li>Disable "TerminalEmulator" setting.</li>
+									<li>Set the "NetworkAdapterIP" network IP address to the "IPv4 Address" of the Master cabinet (Run "cmd.exe /k ipconfig" on Master)</li>
+								</ul>
+							</li>
+							<li>Run Game and enter the Test Menu.</li>
+							<li>Enter Game Settings (second option down).</li>
+							<li>Set a unique Cabinet ID and save.</li>
+							<li>Exit Test Menu with test key.</li>
+						</ol>
+						<p><small>Always allow Window Firewall to pass through communication of this game. This should auto pop-up upon first execution (Alt+Tab to view or exit game).</small></p>
+						
+						<p style="font-weight: bold;">Known Working IP/Subnets</p>
+						<ul>
+							<li>192.168.0.x/255.255.255.0</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	
 		<div class="row">
 			<div class="col-md-12">
