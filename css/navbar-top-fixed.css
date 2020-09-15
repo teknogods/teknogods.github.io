@@ -120,7 +120,7 @@ table tbody {
 table tbody i {
 	font-size: 40px;
 }
-table tbody td[data-col] i {
+table tbody td[data-col] i, .new-game {
 	font-size: 1.25rem;
 }
 
