@@ -142,6 +142,40 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tekno-box">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-network-wired"></i>LAN Networking (2 Players)</p>
+					</div>
+					<div class="tekno-box-content">
+						<p class="font-weight-bold text-danger"><i class="fas fa-exclamation-triangle"></i> LAN Networking is currently broken and network connectivity does not appear to establish. In Store battle mode will be greyed out and Network testing in the Test Menu fails.</p>
+						
+						<p>Setting up for LAN does <strong>not affect</strong> the ability to run this game in standalone mode.</p>
+
+						<p style="font-weight: bold;">Setup</p>
+						<ol>
+							<li>Edit the Game Settings within TeknoParrotUI.</li>
+							<li>Set the "Ip" network IP address to the "IPv4 Address" of the current cabinet (Run "cmd.exe /k ipconfig").</li>
+							<li>Set both "Gateway" and "Dns1" network IP address to your "Default Gateway" address.</li>
+							<li>Set "BroadcastIP" to broadcast address of your IP/Subnet (this will be x.x.x.255 for a /24 IP Address on the Subnet 255.255.255.0).</li>
+							<li>Set "Cab1IP" and "Cab2IP" to the IP address of the cabinet that will represent Seat Number 1 and 2, respectively (see Test Menu below).</li>
+							<li>Enable the Test Mode option and run Game.</li>
+							<li>Enter Game Assignments.</li>
+							<li>Set a unique Seat Number and save.</li>
+							<li>Exit and disable the Test Mode slider and re-run Game.</li>
+						</ol>
+						<p><small>Always allow Window Firewall to pass through communication of this game. This should auto pop-up upon first execution (Alt+Tab to view or exit game).</small></p>
+						
+						<p style="font-weight: bold;">Known Working IP/Subnets</p>
+						<ul>
+							<li>None</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	
 		<div class="row">
 			<div class="col-md-12">
@@ -166,9 +200,9 @@
 						<p><i class="fas fa-times"></i>Features Not Emulated</p>
 					</div>
 					<div class="tekno-box-content">
-						<p>
-							&nbsp;
-						</p>
+						<ul>
+							<li>LAN Networking</li>
+						</ul>
 					</div>
 				</div>
 			</div>
