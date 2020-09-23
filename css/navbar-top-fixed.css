@@ -12,6 +12,10 @@ body {
     visibility: hidden;
 }
 
+.name-filter {
+	display: none;
+}
+
 .teknoDownload {
 	padding: 5px;
 	color: #1c75bc;

@@ -82,7 +82,7 @@
 			<div class="col-md-12">
 				<div class="tekno-box">
 					<div class="table-responsive">
-						<table class="table table-hover games">
+						<table class="table table-hover games-new">
 							<thead>
 								<tr>
 									<th scope="col"><i class="fas fa-bomb"></i></th>
@@ -118,55 +118,18 @@
 			<div class="col-md-12">
 				<div class="tekno-box">
 					<div class="tekno-box-header">
-						<p><i class="fas fa-search"></i>Game Quick Nav</p>
-					</div>
-					<div class="tekno-box-content">
-						<table id="quickTable">
-							<tbody>
-								<tr>
-									<td><a href="#letter-a">A</td>
-									<td><a href="#letter-b">B</td>
-									<td><a href="#letter-c">C</td>
-									<td><a href="#letter-d">D</td>
-									<td><a href="#letter-e">E</td>
-									<td><a href="#letter-f">F</td>
-									<td><a href="#letter-g">G</td>
-									<td><a href="#letter-h">H</td>
-									<td><a href="#letter-i">I</td>
-									<td><a href="#letter-j">J</td>
-									<td><a href="#letter-k">K</td>
-									<td><a href="#letter-l">L</td>
-									<td><a href="#letter-m">M</td>
-									<td><a href="#letter-n">N</td>
-									<td><a href="#letter-o">O</td>
-									<td><a href="#letter-p">P</td>
-									<td><a href="#letter-q">Q</td>
-									<td><a href="#letter-r">R</td>
-									<td><a href="#letter-s">S</td>
-									<td><a href="#letter-t">T</td>
-									<td><a href="#letter-u">U</td>
-									<td><a href="#letter-v">V</td>
-									<td><a href="#letter-w">W</td>
-									<td><a href="#letter-x">X</td>
-									<td><a href="#letter-y">Y</td>
-									<td><a href="#letter-z">Z</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div class="row">
-			<div class="col-md-12">
-				<div class="tekno-box">
-					<div class="tekno-box-header">
 						<p><i class="fas fa-gamepad"></i>Games</p>
 					</div>
 					<div class="tekno-box-content">
 
 						<div class="form-inline">
+						<div class="form-group mr-3">
+								<label class="form-check-label mr-1">Name</label>
+								<select class="form-control form-control-sm filter-column" data-filter-column="name">
+									<option selected></option>
+								</select>
+							</div>
+							
 							<div class="form-group mr-3">
 								<label class="form-check-label mr-1">Genre</label>
 								<select class="form-control form-control-sm filter-column" data-filter-column="genre">
@@ -200,6 +163,7 @@
 						<tr class="click-row" data-href="compatibility/abc.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/abc.png" /></th>
 							<td>After Burner Climax</td>
+							<td data-col="name" data-value="A" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Flying">Flying</td>
 							<td data-col="multiplayer" data-value="None">None</td>
@@ -207,6 +171,7 @@
 						<tr class="click-row" data-href="compatibility/AkaiKatanaShinNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/AkaiKatanaShinNesica.png" /></th>
 							<td>Akai Katana Shin for NESICAxLive</td>
+							<td data-col="name" data-value="A" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -214,6 +179,7 @@
 						<tr class="click-row" data-href="compatibility/AquapazzaAquaplusDreamMatch.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/AquapazzaAquaplusDreamMatch.png" /></th>
 							<td>Aquapazza: Aquaplus Dream Match</td>
+							<td data-col="name" data-value="A" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -221,6 +187,7 @@
 						<tr class="click-row" data-href="compatibility/ArcanaHeart2Nesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ArcanaHeart2Nesica.png" /></th>
 							<td>Arcana Heart 2 for NESICAxLive</td>
+							<td data-col="name" data-value="A" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -228,13 +195,15 @@
 						<tr class="click-row" data-href="compatibility/ArcanaHeart3Exboard.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ArcanaHeart3Exboard.png" /></th>
 							<td>Arcana Heart 3 (eX-Board)</td>
+							<td data-col="name" data-value="A" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-b" class="click-row" data-href="compatibility/ArcanaHeart3Nesica.htm">
+						<tr class="click-row" data-href="compatibility/ArcanaHeart3Nesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ArcanaHeart3Nesica.png" /></th>
 							<td>Arcana Heart 3 LOVEMAX SIXSTARS!!!!!!</td>
+							<td data-col="name" data-value="A" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -242,6 +211,7 @@
 						<tr class="click-row" data-href="compatibility/Batman.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Batman.png" /></th>
 							<td>Batman</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -249,6 +219,7 @@
 						<tr class="click-row" data-href="compatibility/BattleFantasia.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BattleFantasia.png" /></th>
 							<td>Battle Fantasia</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-minus-circle unplayable"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -256,6 +227,7 @@
 						<tr class="click-row" data-href="compatibility/BattleGear4.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BattleGear4.png" /></th>
 							<td>Battle Gear 4</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -263,6 +235,7 @@
 						<tr class="click-row" data-href="compatibility/BattleGear4Tuned.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BattleGear4Tuned.png" /></th>
 							<td>Battle Gear 4 Tuned</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -270,6 +243,7 @@
 						<tr class="click-row" data-href="compatibility/BladeArcus.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BladeArcus.png" /></th>
 							<td>Blade Arcus</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -277,6 +251,7 @@
 						<tr class="click-row" data-href="compatibility/BladeStrangers.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BladeStrangers.png" /></th>
 							<td>Blade Strangers</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -284,6 +259,7 @@
 						<tr class="click-row" data-href="compatibility/BlazBlueCalaminityTrigger.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BlazBlueCalaminityTrigger.png" /></th>
 							<td>BlazBlue: Calamity Trigger</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-minus-circle unplayable"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -291,6 +267,7 @@
 						<tr class="click-row" data-href="compatibility/BBCF.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BBCF.png" /></th>
 							<td>BlazBlue: Central Fiction</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -298,6 +275,7 @@
 						<tr class="click-row" data-href="compatibility/BBCP.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BBCP.png" /></th>
 							<td>BlazBlue: Chronophantasma</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -305,6 +283,7 @@
 						<tr class="click-row" data-href="compatibility/BlazBlueContinuumShift.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BlazBlueContinuumShift.png" /></th>
 							<td>BlazBlue: Continuum Shift</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -312,13 +291,15 @@
 						<tr class="click-row" data-href="compatibility/BlazBlueContinuumShift2.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BlazBlueContinuumShift2.png" /></th>
 							<td>BlazBlue: Continuum Shift II</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-c" class="click-row" data-href="compatibility/BorderBreakScramble.htm">
+						<tr class="click-row" data-href="compatibility/BorderBreakScramble.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/BorderBreakScramble.png" /></th>
 							<td>Border Break Scramble</td>
+							<td data-col="name" data-value="B" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -326,6 +307,7 @@
 						<tr class="click-row" data-href="compatibility/CaladriusAC.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/CaladriusAC.png" /></th>
 							<td>Caladrius AC</td>
+							<td data-col="name" data-value="C" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -333,6 +315,7 @@
 						<tr class="click-row" data-href="compatibility/ChaosBreaker.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ChaosBreaker.png" /></th>
 							<td>Chaos Breaker</td>
+							<td data-col="name" data-value="C" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -340,6 +323,7 @@
 						<tr class="click-row" data-href="compatibility/CC.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/CC.png" /></th>
 							<td>Chaos Code</td>
+							<td data-col="name" data-value="C" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -347,6 +331,7 @@
 						<tr class="click-row" data-href="compatibility/ChaosCodeNSOC103.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ChaosCodeNSOC103.png" /></th>
 							<td>Chaos Code: New Sign of Catastrophe v1.03.00</td>
+							<td data-col="name" data-value="C" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -354,6 +339,7 @@
 						<tr class="click-row" data-href="compatibility/ChaseHQ2.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ChaseHQ2.png" /></th>
 							<td>Chase H.Q. 2</td>
+							<td data-col="name" data-value="C" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -361,13 +347,15 @@
 						<tr class="click-row" data-href="compatibility/CSNEO.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/CSNEO.png" /></th>
 							<td>Counter-Strike Neo</td>
+							<td data-col="name" data-value="C" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-d" class="click-row" data-href="compatibility/CrimzonClover.htm">
+						<tr class="click-row" data-href="compatibility/CrimzonClover.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/CrimzonClover.png" /></th>
 							<td>Crimzon Clover for NESICAxLive</td>
+							<td data-col="name" data-value="C" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -375,6 +363,7 @@
 						<tr class="click-row" data-href="compatibility/DaemonBrideExboard.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/DaemonBrideExboard.png" /></th>
 							<td>Daemon Bride (eX-Board)</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -382,6 +371,7 @@
 						<tr class="click-row" data-href="compatibility/DariusBurst.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/DariusBurst.png" /></th>
 							<td>Dariusburst: Another Chronicle</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -389,6 +379,7 @@
 						<tr class="click-row" data-href="compatibility/Daytona3.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Daytona3.png" /></th>
 							<td>Daytona Championship USA</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -396,6 +387,7 @@
 						<tr class="click-row" data-href="compatibility/DOA5.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/DOA5.png" /></th>
 							<td>Dead or Alive 5 Ultimate Arcade</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -403,6 +395,7 @@
 						<tr class="click-row" data-href="compatibility/FightingClimax.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FightingClimax.png" /></th>
 							<td>Dengeki Bunko: Fighting Climax</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -410,6 +403,7 @@
 						<tr class="click-row" data-href="compatibility/DirtyDrivin.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/DirtyDrivin.png" /></th>
 							<td>Dirty Drivin'</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -417,6 +411,7 @@
 						<tr class="click-row" data-href="compatibility/DoNotFallRunforYourDrink.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/DoNotFallRunforYourDrink.png" /></th>
 							<td>Do Not Fall: Run For Your Drink</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Local"><i class="fas fa-check text-success"></i> Local</td>
@@ -424,13 +419,15 @@
 						<tr class="click-row" data-href="compatibility/DragonDanceNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/DragonDanceNesica.png" /></th>
 							<td>Dragon Dance for NESICAxLive</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-e" class="click-row" data-href="compatibility/SDR.htm">
+						<tr class="click-row" data-href="compatibility/SDR.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SDR.png" /></th>
 							<td>Dream Raiders</td>
+							<td data-col="name" data-value="D" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -438,13 +435,15 @@
 						<tr class="click-row" data-href="compatibility/ElevatorAction.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ElevatorAction.png" /></th>
 							<td>Elevator Action for NESICAxLive</td>
+							<td data-col="name" data-value="E" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-f" class="click-row" data-href="compatibility/EnEinsPerfektewelt.htm">
+						<tr class="click-row" data-href="compatibility/EnEinsPerfektewelt.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/EnEinsPerfektewelt.png" /></th>
 							<td>En-Eins Perfektewelt for NESICAxLive</td>
+							<td data-col="name" data-value="E" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -452,13 +451,15 @@
 						<tr class="click-row" data-href="compatibility/FightingClimaxIgnition.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FightingClimaxIgnition.png" /></th>
 							<td>Fighting Climax Ignition</td>
+							<td data-col="name" data-value="F" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-g" class="click-row" data-href="compatibility/FR.htm">
+						<tr class="click-row" data-href="compatibility/FR.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FR.png" /></th>
 							<td>Ford Racing: Full Blown</td>
+							<td data-col="name" data-value="F" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN"><i class="fas fa-check text-success"></i> LAN</td>
@@ -466,6 +467,7 @@
 						<tr class="click-row" data-href="compatibility/GaelcoChampionshipTuningRace.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GaelcoChampionshipTuningRace.png" /></th>
 							<td>Gaelco Championship Tuning Race</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -473,6 +475,7 @@
 						<tr class="click-row" data-href="compatibility/ArcadeLove.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ArcadeLove.png" /></th>
 							<td>Ge-Sen Love: Plus Pengo!</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -480,6 +483,7 @@
 						<tr class="click-row" data-href="compatibility/GSEVO.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GSEVO.png" /></th>
 							<td>Ghost Squad Evolution</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -487,6 +491,7 @@
 						<tr class="click-row" data-href="compatibility/GigaWingGenerations.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GigaWingGenerations.png" /></th>
 							<td>GigaWing Generations</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -494,6 +499,7 @@
 						<tr class="click-row" data-href="compatibility/PowerInstinctV.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/PowerInstinctV.png" /></th>
 							<td>Gouketsuji Ichizoku: Senzo Kuyou (Taito Type X2)</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -501,6 +507,7 @@
 						<tr class="click-row" data-href="compatibility/Goketsuji.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Goketsuji.png" /></th>
 							<td>Gouketsuji Ichizoku: Senzo Kuyou for NESICAxLive</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -508,6 +515,7 @@
 						<tr class="click-row" data-href="compatibility/GRID.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GRID.png" /></th>
 							<td>GRID</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN"><i class="fas fa-check text-success"></i> LAN</td>
@@ -515,6 +523,7 @@
 						<tr class="click-row" data-href="compatibility/GrooveCoaster2.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GrooveCoaster2.png" /></th>
 							<td>Groove Coaster 2: Heavenly Festival</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Rhythm">Rhythm</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -522,6 +531,7 @@
 						<tr class="click-row" data-href="compatibility/GtiClub3.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GtiClub3.png" /></th>
 							<td>GTI Club: Supermini Festa!</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN"><i class="fas fa-check text-success"></i> LAN</td>
@@ -529,6 +539,7 @@
 						<tr class="click-row" data-href="compatibility/GGXrd.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GGXrd.png" /></th>
 							<td>Guilty Gear Xrd REV2</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -536,6 +547,7 @@
 						<tr class="click-row" data-href="compatibility/GGXrdSIGN.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GGXrdSIGN.png" /></th>
 							<td>Guilty Gear Xrd -SIGN-</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -543,13 +555,15 @@
 						<tr class="click-row" data-href="compatibility/GGXX.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GGXX.png" /></th>
 							<td>Guilty Gear XX Accent Core Plus R</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-h" class="click-row" data-href="compatibility/GHA.htm">
+						<tr class="click-row" data-href="compatibility/GHA.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GHA.png" /></th>
 							<td>Guitar Hero Arcade</td>
+							<td data-col="name" data-value="G" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -557,6 +571,7 @@
 						<tr class="click-row" data-href="compatibility/H2Overdrive.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/H2Overdrive.png" /></th>
 							<td>H2Overdrive</td>
+							<td data-col="name" data-value="H" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -564,13 +579,15 @@
 						<tr class="click-row" data-href="compatibility/Homura.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Homura.png" /></th>
 							<td>Homura for NESICAxLive</td>
+							<td data-col="name" data-value="H" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-i" class="click-row" data-href="compatibility/HyperStreetFighterII.htm">
+						<tr class="click-row" data-href="compatibility/HyperStreetFighterII.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/HyperStreetFighterII.png" /></th>
 							<td>Hyper Street Fighter II - The Anniversary Edition for NESICAxLive</td>
+							<td data-col="name" data-value="H" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -578,6 +595,7 @@
 						<tr class="click-row" data-href="compatibility/Ikaruga.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Ikaruga.png" /></th>
 							<td>Ikaruga for NESICAxLive</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -585,6 +603,7 @@
 						<tr class="click-row" data-href="compatibility/ID4Exp.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ID4Exp.png" /></th>
 							<td>Initial D: Arcade Stage 4 (Export)</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN (Broken)"><i class="fas fa-times text-danger"></i> LAN (Broken)</td>
@@ -592,6 +611,7 @@
 						<tr class="click-row" data-href="compatibility/ID4Jap.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ID4Jap.png" /></th>
 							<td>Initial D: Arcade Stage 4 (Japanese)</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -599,6 +619,7 @@
 						<tr class="click-row" data-href="compatibility/ID5.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ID5.png" /></th>
 							<td>Initial D: Arcade Stage 5 (Export)</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -606,6 +627,7 @@
 						<tr class="click-row" data-href="compatibility/ID6.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ID6.png" /></th>
 							<td>Initial D: Arcade Stage 6 Double Ace</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -613,6 +635,7 @@
 						<tr class="click-row" data-href="compatibility/ID7.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ID7.png" /></th>
 							<td>Initial D: Arcade Stage 7 Double Ace Cross</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -620,20 +643,23 @@
 						<tr class="click-row" data-href="compatibility/ID8.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ID8.png" /></th>
 							<td>Initial D: Arcade Stage 8 Infinity</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-j" class="click-row" data-href="compatibility/IDZ.htm">
+						<tr class="click-row" data-href="compatibility/IDZ.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/IDZ.png" /></th>
 							<td>Initial D: Arcade Stage Zero (Third-Party - SegaTools)</td>
+							<td data-col="name" data-value="I" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-k" class="click-row" data-href="compatibility/JusticeLeague.htm">
+						<tr class="click-row" data-href="compatibility/JusticeLeague.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/JusticeLeague.png" /></th>
 							<td>Justice League - Heroes United</td>
+							<td data-col="name" data-value="J" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -641,6 +667,7 @@
 						<tr class="click-row" data-href="compatibility/KODrive.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KODrive.png" /></th>
 							<td>K.O. Drive (Prototype)</td>
+							<td data-col="name" data-value="K" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -648,6 +675,7 @@
 						<tr class="click-row" data-href="compatibility/KingofFightersXIIIClimax.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFightersXIIIClimax.png" /></th>
 							<td>King of Fighters XIII Climax</td>
+							<td data-col="name" data-value="K" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -655,6 +683,7 @@
 						<tr class="click-row" data-href="compatibility/KingofFightersXIIIClimaxNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFightersXIIIClimaxNesica.png" /></th>
 							<td>King of Fighters XIII Climax (Nesica)</td>
+							<td data-col="name" data-value="K" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -662,6 +691,7 @@
 						<tr class="click-row" data-href="compatibility/KingofFightersMaximumImpactRegulationA.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFightersMaximumImpactRegulationA.png" /></th>
 							<td>KOF Maximum Impact Regulation A</td>
+							<td data-col="name" data-value="K" class="name-filter"></td>
 							<td><i class="fas fa-minus-circle unplayable"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -669,13 +699,15 @@
 						<tr class="click-row" data-href="compatibility/KingofFightersSkyStage.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFightersSkyStage.png" /></th>
 							<td>KOF Sky Stage</td>
+							<td data-col="name" data-value="K" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-l" class="click-row" data-href="compatibility/Koihime.htm">
+						<tr class="click-row" data-href="compatibility/Koihime.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Koihime.png" /></th>
 							<td>Koihime Enbu</td>
+							<td data-col="name" data-value="K" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -683,6 +715,7 @@
 						<tr class="click-row" data-href="compatibility/LGI3D.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/LGI3D.png" /></th>
 							<td>Let's Go Island 3D: Lost on the Island of Tropics</td>
+							<td data-col="name" data-value="L" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -690,6 +723,7 @@
 						<tr class="click-row" data-href="compatibility/LGI.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/LGI.png" /></th>
 							<td>Let's Go Island: Lost on the Island of Tropics</td>
+							<td data-col="name" data-value="L" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -697,6 +731,7 @@
 						<tr class="click-row" data-href="compatibility/LGJS.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/LGJS.png" /></th>
 							<td>Let's Go Jungle Special</td>
+							<td data-col="name" data-value="L" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -704,6 +739,7 @@
 						<tr class="click-row" data-href="compatibility/LGJ.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/LGJ.png" /></th>
 							<td>Let's Go Jungle: Lost on the Island of Spice</td>
+							<td data-col="name" data-value="L" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -711,13 +747,15 @@
 						<tr class="click-row" data-href="compatibility/LGS.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/LGS.png" /></th>
 							<td>Let's Go Safari</td>
+							<td data-col="name" data-value="L" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-m" class="click-row" data-href="compatibility/LuigisMansion.htm">
+						<tr class="click-row" data-href="compatibility/LuigisMansion.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/LuigisMansion.png" /></th>
 							<td>Luigi's Mansion Arcade</td>
+							<td data-col="name" data-value="L" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Local"><i class="fas fa-check text-success"></i> Local</td>
@@ -725,6 +763,7 @@
 						<tr class="click-row" data-href="compatibility/MS.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MS.png" /></th>
 							<td>MachStorm</td>
+							<td data-col="name" data-value="M" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Flying">Flying</td>
 							<td data-col="multiplayer" data-value="None">None</td>
@@ -732,6 +771,7 @@
 						<tr class="click-row" data-href="compatibility/MagicalBeat.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MagicalBeat.png" /></th>
 							<td>Magical Beat</td>
+							<td data-col="name" data-value="M" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Puzzle">Puzzle</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -739,6 +779,7 @@
 						<tr class="click-row" data-href="compatibility/MaiMaiGreen.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MaiMaiGreen.png" /></th>
 							<td>maimai GreeN</td>
+							<td data-col="name" data-value="M" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Rhythm">Rhythm</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -746,6 +787,7 @@
 						<tr class="click-row" data-href="compatibility/MKDXUSA.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MKDXUSA.png" /></th>
 							<td>Mario Kart DX USA</td>
+							<td data-col="name" data-value="M" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -753,6 +795,7 @@
 						<tr class="click-row" data-href="compatibility/MKDX.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MKDX.png" /></th>
 							<td>Mario Kart Arcade GP DX</td>
+							<td data-col="name" data-value="M" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN"><i class="fas fa-check text-success"></i> LAN</td>
@@ -760,20 +803,23 @@
 						<tr class="click-row" data-href="compatibility/MeltyBloodRE2.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MeltyBloodRE2.png" onerror="if (this.src != 'img/teknoparrot-logo-small.png') this.src = 'img/teknoparrot-logo-small.png';" /></th>
 							<td>Melty Blood (RE2)</td>
+							<td data-col="name" data-value="M" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-n" class="click-row" data-href="compatibility/MB.htm">
+						<tr class="click-row" data-href="compatibility/MB.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MB.png" /></th>
 							<td>Melty Blood: Actress Again - Current Code</td>
+							<td data-col="name" data-value="M" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-o" class="click-row" data-href="compatibility/NitroplusBlasterz.htm">
+						<tr class="click-row" data-href="compatibility/NitroplusBlasterz.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/NitroplusBlasterz.png" /></th>
 							<td>Nitro+ Blasterz: Heroines Infinite Duel</td>
+							<td data-col="name" data-value="N" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -781,13 +827,15 @@
 						<tr class="click-row" data-href="compatibility/OG.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/OG.png" /></th>
 							<td>Operation G.H.O.S.T.</td>
+							<td data-col="name" data-value="O" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-p" class="click-row" data-href="compatibility/or2spdlx.htm">
+						<tr class="click-row" data-href="compatibility/or2spdlx.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/or2spdlx.png" /></th>
 							<td>OutRun 2 SP SDX</td>
+							<td data-col="name" data-value="O" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN"><i class="fas fa-check text-success"></i> LAN</td>
@@ -795,6 +843,7 @@
 						<tr class="click-row" data-href="compatibility/Persona4A.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Persona4A.png" /></th>
 							<td>P4U: Persona 4 The Ultimate in Mayonaka Arena</td>
+							<td data-col="name" data-value="P" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -802,6 +851,7 @@
 						<tr class="click-row" data-href="compatibility/Persona4U.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Persona4U.png" /></th>
 							<td>P4UU: Persona 4 The Ultimate Ultra Suplex Hold</td>
+							<td data-col="name" data-value="P" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -809,6 +859,7 @@
 						<tr class="click-row" data-href="compatibility/PhantomBreaker.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/PhantomBreaker.png" /></th>
 							<td>Phantom Breaker: Another Code</td>
+							<td data-col="name" data-value="P" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -816,6 +867,7 @@
 						<tr class="click-row" data-href="compatibility/PokkenTournament.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/PokkenTournament.png" /></th>
 							<td>Pokkén Tournament</td>
+							<td data-col="name" data-value="P" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -823,6 +875,7 @@
 						<tr class="click-row" data-href="compatibility/ProjectDiva.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ProjectDiva.png" /></th>
 							<td>Project Diva Arcade</td>
+							<td data-col="name" data-value="P" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -830,13 +883,15 @@
 						<tr class="click-row" data-href="compatibility/PPQ.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/PPQ.png" /></th>
 							<td>Puyo Puyo!! Quest Arcade</td>
+							<td data-col="name" data-value="P" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-r" class="click-row" data-href="compatibility/PuzzleBobble.htm">
+						<tr class="click-row" data-href="compatibility/PuzzleBobble.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/PuzzleBobble.png" /></th>
 							<td>Puzzle Bobble for NESICAxLive</td>
+							<td data-col="name" data-value="P" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Puzzle">Puzzle</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -844,6 +899,7 @@
 						<tr class="click-row" data-href="compatibility/RaidenIII.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/RaidenIII.png" /></th>
 							<td>Raiden III</td>
+							<td data-col="name" data-value="R" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -851,6 +907,7 @@
 						<tr class="click-row" data-href="compatibility/RaidenIIINesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/RaidenIIINesica.png" /></th>
 							<td>Raiden III for NESICAxLive</td>
+							<td data-col="name" data-value="R" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -858,6 +915,7 @@
 						<tr class="click-row" data-href="compatibility/RaidenIV.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/RaidenIV.png" /></th>
 							<td>Raiden IV</td>
+							<td data-col="name" data-value="R" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -865,6 +923,7 @@
 						<tr class="click-row" data-href="compatibility/RaidenIVNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/RaidenIVNesica.png" /></th>
 							<td>Raiden IV for NESICAxLive</td>
+							<td data-col="name" data-value="R" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -872,6 +931,7 @@
 						<tr class="click-row" data-href="compatibility/Rambo.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Rambo.png" /></th>
 							<td>Rambo</td>
+							<td data-col="name" data-value="R" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -879,13 +939,15 @@
 						<tr class="click-row" data-href="compatibility/RastanSaga.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/RastanSaga.png" /></th>
 							<td>Rastan Saga for NESICAxLive</td>
+							<td data-col="name" data-value="R" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-s" class="click-row" data-href="compatibility/R-Tuned.htm">
+						<tr class="click-row" data-href="compatibility/R-Tuned.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/R-Tuned.png" /></th>
 							<td>R-Tuned: Ultimate Street Racing</td>
+							<td data-col="name" data-value="R" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN (Broken)"><i class="fas fa-times text-danger"></i> LAN (Broken)</td>
@@ -893,6 +955,7 @@
 						<tr class="click-row" data-href="compatibility/SamuraiSpiritsSen.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SamuraiSpiritsSen.png" /></th>
 							<td>Samurai Spirits Sen</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -900,6 +963,7 @@
 						<tr class="click-row" data-href="compatibility/SchoolOfRagnarok.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SchoolOfRagnarok.png" /></th>
 							<td>School of Ragnarok</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -907,6 +971,7 @@
 						<tr class="click-row" data-href="compatibility/GG.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/GG.png" /></th>
 							<td>SEGA Golden Gun</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -914,6 +979,7 @@
 						<tr class="click-row" data-href="compatibility/segartv.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/segartv.png" /></th>
 							<td>SEGA Race TV</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN (Broken)"><i class="fas fa-times text-danger"></i> LAN (Broken)</td>
@@ -921,6 +987,7 @@
 						<tr class="click-row" data-href="compatibility/SRC.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SRC.png" /></th>
 							<td>SEGA Racing Classic</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -928,6 +995,7 @@
 						<tr class="click-row" data-href="compatibility/SR3.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SR3.png" /></th>
 							<td>SEGA Rally 3</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN"><i class="fas fa-check text-success"></i> LAN</td>
@@ -935,6 +1003,7 @@
 						<tr class="click-row" data-href="compatibility/SenkoNoRondeDuo.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SenkoNoRondeDuo.png" /></th>
 							<td>Senko no Ronde: DUO - Dis-United Order</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -942,6 +1011,7 @@
 						<tr class="click-row" data-href="compatibility/SenkoNoRondeDuoNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SenkoNoRondeDuoNesica.png" /></th>
 							<td>Senko no Ronde: DUO - Dis-United Order for NESICAxLive</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -949,6 +1019,7 @@
 						<tr class="click-row" data-href="compatibility/Shigami3.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Shigami3.png" /></th>
 							<td>Shikigami no Shiro III</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -956,6 +1027,7 @@
 						<tr class="click-row" data-href="compatibility/ShiningForceCrossElysion.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ShiningForceCrossElysion.png" /></th>
 							<td>Shining Force: Cross Elysion</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -963,6 +1035,7 @@
 						<tr class="click-row" data-href="compatibility/ShiningForceCrossExlesia.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ShiningForceCrossExlesia.png" /></th>
 							<td>Shining Force: Cross Exlesia</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -970,6 +1043,7 @@
 						<tr class="click-row" data-href="compatibility/ShiningForceCrossRaid.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/ShiningForceCrossRaid.png" /></th>
 							<td>Shining Force: Cross Raid</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -977,6 +1051,7 @@
 						<tr class="click-row" data-href="compatibility/SSASR.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SSASR.png" /></th>
 							<td>Sonic & SEGA All-Stars Racing</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -984,6 +1059,7 @@
 						<tr class="click-row" data-href="compatibility/SpaceInvaders.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SpaceInvaders.png" /></th>
 							<td>Space Invaders for NESICAxLive</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -991,6 +1067,7 @@
 						<tr class="click-row" data-href="compatibility/SpicaAdventure.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SpicaAdventure.png" /></th>
 							<td>Spica Adventure</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -998,6 +1075,7 @@
 						<tr class="click-row" data-href="compatibility/StarTrekVoyager.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/StarTrekVoyager.png" /></th>
 							<td>Star Trek Voyager</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1005,6 +1083,7 @@
 						<tr class="click-row" data-href="compatibility/StarWars.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/StarWars.png" /></th>
 							<td>STAR WARS: Battle Pod</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle issues"></i></td>
 							<td data-col="genre" data-value="Flying">Flying</td>
 							<td data-col="multiplayer" data-value="None">None</td>
@@ -1012,6 +1091,7 @@
 						<tr class="click-row" data-href="compatibility/StraniaTheStellaMachina.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/StraniaTheStellaMachina.png" /></th>
 							<td>Strania -The Stella Machine-</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1019,6 +1099,7 @@
 						<tr class="click-row" data-href="compatibility/StreetFighterIII3rdStrike.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/StreetFighterIII3rdStrike.png" /></th>
 							<td>Street Fighter III: 3rd Strike - Fight for the Future for NESICAxLive</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1026,6 +1107,7 @@
 						<tr class="click-row" data-href="compatibility/StreetFighterZero3.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/StreetFighterZero3.png" /></th>
 							<td>Street Fighter Zero 3 for NESiCAxLive</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1033,6 +1115,7 @@
 						<tr class="click-row" data-href="compatibility/SuggoiArcanaHeart2Nesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SuggoiArcanaHeart2Nesica.png" /></th>
 							<td>Suggoi! Arcana Heart 2 for NESICAxLive</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1040,6 +1123,7 @@
 						<tr class="click-row" data-href="compatibility/FNFSB2.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FNFSB2.png" /></th>
 							<td>Super Bikes 2</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1047,6 +1131,7 @@
 						<tr class="click-row" data-href="compatibility/SuperStreetFighterIVArcadeEdition.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SuperStreetFighterIVArcadeEdition.png" /></th>
 							<td>Super Street Fighter IV: Arcade Edition</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1054,13 +1139,15 @@
 						<tr class="click-row" data-href="compatibility/SuperStreetFighterIVArcadeEditionEXP.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SuperStreetFighterIVArcadeEditionEXP.png" /></th>
 							<td>Super Street Fighter IV: Arcade Edition (Export)</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-t" class="click-row" data-href="compatibility/SuperStreetFighterIVArcadeEditionVer2012.htm">
+						<tr class="click-row" data-href="compatibility/SuperStreetFighterIVArcadeEditionVer2012.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SuperStreetFighterIVArcadeEditionVer2012.png" /></th>
 							<td>Super Street Fighter IV: Arcade Edition Ver. 2012</td>
+							<td data-col="name" data-value="S" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1068,6 +1155,7 @@
 						<tr class="click-row" data-href="compatibility/TaisenHotGimmick5.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/TaisenHotGimmick5.png" /></th>
 							<td>Taisen Hot Gimmick 5: Mirai Eigou</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1075,6 +1163,7 @@
 						<tr class="click-row" data-href="compatibility/Tekken7.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Tekken7.png" /></th>
 							<td>Tekken 7</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1082,6 +1171,7 @@
 						<tr class="click-row" data-href="compatibility/Tekken7FR.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Tekken7FR.png" /></th>
 							<td>Tekken 7: Fated Retribution</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1089,6 +1179,7 @@
 						<tr class="click-row" data-href="compatibility/TetrisTheGrandMaster3TerrorInstinct.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/TetrisTheGrandMaster3TerrorInstinct.png" /></th>
 							<td>Tetris: The Grand Masters 3 - Terror-Instinct</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Puzzle">Puzzle</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1096,6 +1187,7 @@
 						<tr class="click-row" data-href="compatibility/FNF.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FNF.png" /></th>
 							<td>The Fast and the Furious</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1103,6 +1195,7 @@
 						<tr class="click-row" data-href="compatibility/FNFDrift.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FNFDrift.png" /></th>
 							<td>The Fast and the Furious: Drift</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1110,6 +1203,7 @@
 						<tr class="click-row" data-href="compatibility/FNFSB.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FNFSB.png" /></th>
 							<td>The Fast and the Furious: Super Bikes</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1117,6 +1211,7 @@
 						<tr class="click-row" data-href="compatibility/FNFSC.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/FNFSC.png" /></th>
 							<td>The Fast and the Furious: SuperCars</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1124,6 +1219,7 @@
 						<tr class="click-row" data-href="compatibility/HOTD4.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/HOTD4.png" /></th>
 							<td>The House of the Dead 4</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1131,6 +1227,7 @@
 						<tr class="click-row" data-href="compatibility/KingofFighters98UnlimitedMatch.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFighters98UnlimitedMatch.png" /></th>
 							<td>The King of Fighters '98: Ultimate Match</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1138,6 +1235,7 @@
 						<tr class="click-row" data-href="compatibility/KingofFighters98UltimateMatchFinalEditionNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFighters98UltimateMatchFinalEditionNesica.png" /></th>
 							<td>The King of Fighters '98: Ultimate Match Final Edition for NESICAxLive</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1145,6 +1243,7 @@
 						<tr class="click-row" data-href="compatibility/KingofFightersXII.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFightersXII.png" /></th>
 							<td>The King of Fighters XII</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1152,6 +1251,7 @@
 						<tr class="click-row" data-href="compatibility/KingofFightersXIII.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/KingofFightersXIII.png" /></th>
 							<td>The King of Fighters XIII</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1159,6 +1259,7 @@
 						<tr class="click-row" data-href="compatibility/RumbleFish2Nesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/RumbleFish2Nesica.png" /></th>
 							<td>The Rumble Fish 2 for NESICAxLive</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1166,6 +1267,7 @@
 						<tr class="click-row" data-href="compatibility/Theatrhythm.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Theatrhythm.png" /></th>
 							<td>Theatrhythm Final Fantasy: All-Star Carnival</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Rhythm">Rhythm</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1173,6 +1275,7 @@
 						<tr class="click-row" data-href="compatibility/TokyoCop.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/TokyoCop.png" /></th>
 							<td>Tokyo Cop</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN (Broken)"><i class="fas fa-times text-danger"></i> LAN (Broken)</td>
@@ -1180,6 +1283,7 @@
 						<tr class="click-row" data-href="compatibility/2Spicy.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/2Spicy.png" /></th>
 							<td>Too Spicy</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1187,6 +1291,7 @@
 						<tr class="click-row" data-href="compatibility/Transformers.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/Transformers.png" /></th>
 							<td>Transformers: Human Alliance</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Shooter">Shooter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1194,13 +1299,15 @@
 						<tr class="click-row" data-href="compatibility/TroubleWitches.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/TroubleWitches.png" /></th>
 							<td>Trouble Witches AC</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-u" class="click-row" data-href="compatibility/TroubleWitchesNesica.htm">
+						<tr class="click-row" data-href="compatibility/TroubleWitchesNesica.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/TroubleWitchesNesica.png" /></th>
 							<td>Trouble Witches AC for NESICAxLive</td>
+							<td data-col="name" data-value="T" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1208,6 +1315,7 @@
 						<tr class="click-row" data-href="compatibility/UltraStreetFighterIV.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/UltraStreetFighterIV.png" /></th>
 							<td>Ultra Street Fighter IV</td>
+							<td data-col="name" data-value="U" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1215,6 +1323,7 @@
 						<tr class="click-row" data-href="compatibility/UDX.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/UDX.png" /></th>
 							<td>Under Defeat HD+</td>
+							<td data-col="name" data-value="U" class="name-filter"></td>
 							<td><i class="fas fa-check-circle perfect"></i></td>
 							<td data-col="genre" data-value="Shoot 'Em Up">Shoot 'Em Up</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1222,13 +1331,15 @@
 						<tr class="click-row" data-href="compatibility/UnderNightInBirth.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/UnderNightInBirth.png" onerror="if (this.src != 'img/teknoparrot-logo-small.png') this.src = 'img/teknoparrot-logo-small.png';" /></th>
 							<td>Under Night In-Birth</td>
+							<td data-col="name" data-value="U" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-v" class="click-row" data-href="compatibility/UnderNightInBirthExeLatest.htm">
+						<tr class="click-row" data-href="compatibility/UnderNightInBirthExeLatest.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/UnderNightInBirthExeLatest.png" onerror="if (this.src != 'img/teknoparrot-logo-small.png') this.src = 'img/teknoparrot-logo-small.png';" /></th>
 							<td>Under Night In-Birth Exe:Late[st]</td>
+							<td data-col="name" data-value="U" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1236,6 +1347,7 @@
 						<tr class="click-row" data-href="compatibility/VirtuaRLimit.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/VirtuaRLimit.png" /></th>
 							<td>Valve Limit R</td>
+							<td data-col="name" data-value="V" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1243,6 +1355,7 @@
 						<tr class="click-row" data-href="compatibility/VampireSavior.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/VampireSavior.png" /></th>
 							<td>Vampire Savior: The Lord of Vampire for NESICAxLive</td>
+							<td data-col="name" data-value="V" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1250,6 +1363,7 @@
 						<tr class="click-row" data-href="compatibility/VF5B.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/VF5B.png" /></th>
 							<td>Virtua Fighter 5 (Version B)</td>
+							<td data-col="name" data-value="V" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1257,6 +1371,7 @@
 						<tr class="click-row" data-href="compatibility/VF5C.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/VF5C.png" /></th>
 							<td>Virtua Fighter 5 (Version C)</td>
+							<td data-col="name" data-value="V" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Fighter">Fighter</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1264,13 +1379,15 @@
 						<tr class="click-row" data-href="compatibility/VT3.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/VT3.png" /></th>
 							<td>Virtua Tennis 3</td>
+							<td data-col="name" data-value="V" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Sports">Sports</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
 						</tr>
-						<tr id="letter-w" class="click-row" data-href="compatibility/VT4.htm">
+						<tr class="click-row" data-href="compatibility/VT4.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/VT4.png" /></th>
 							<td>Virtua Tennis 4</td>
+							<td data-col="name" data-value="V" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Sports">Sports</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1278,6 +1395,7 @@
 						<tr class="click-row" data-href="compatibility/WackyRaces.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/WackyRaces.png" /></th>
 							<td>Wacky Races</td>
+							<td data-col="name" data-value="W" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1285,13 +1403,15 @@
 						<tr class="click-row" data-href="compatibility/WMMT5.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/WMMT5.png" /></th>
 							<td>Wangan Midnight Maximum Tune 5</td>
+							<td data-col="name" data-value="W" class="name-filter"></td>
 							<td><i class="fas fa-check-circle great"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="LAN"><i class="fas fa-check text-success"></i> LAN</td>
 						</tr>
-						<tr id="letter-y" class="click-row" data-href="compatibility/SnoCross.htm">
+						<tr class="click-row" data-href="compatibility/SnoCross.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/SnoCross.png" /></th>
 							<td>Winter X Games SnoCross</td>
+							<td data-col="name" data-value="W" class="name-filter"></td>
 							<td><i class="fas fa-exclamation-circle issues"></i></td>
 							<td data-col="genre" data-value="Racing">Racing</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
@@ -1299,6 +1419,7 @@
 						<tr class="click-row" data-href="compatibility/YugiohDT6U.htm">
 							<th scope="row"><img src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/YugiohDT6U.png" /></th>
 							<td>Yugioh 5DS Duel Terminal 6 (USA)</td>
+							<td data-col="name" data-value="Y" class="name-filter"></td>
 							<td><i class="fas fa-question-circle unknown"></i></td>
 							<td data-col="genre" data-value="Unknown">Unknown</td>
 							<td data-col="multiplayer" data-value="Unknown">Unknown</td>
