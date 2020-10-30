@@ -201,9 +201,10 @@ p, li {
 .nav-link {
 	color: #27aae1 !important;
 	padding: 0 1rem !important;
-	line-height: 80px;
+	line-height: 60px;
 	font-size: 14px;
 	/*font-weight: bold;*/
+	border-radius: 3px;
 }
 
 .nav-link i {
