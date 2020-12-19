@@ -22,23 +22,23 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-tekno">
-      <a class="navbar-brand" href="../index.html"><img src="../img/teknoparrot-logo-small.png" /></a>
+      <a class="navbar-brand" href="/index.html"><img src="/img/teknoparrot-logo-small.png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="nav-link" href="/index.html"><i class="fas fa-home"></i>Home</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="../getstarted.html"><i class="fas fa-tasks"></i>Get Started</a>
+            <a class="nav-link" href="/getstarted.html"><i class="fas fa-tasks"></i>Get Started</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
+            <a class="nav-link" href="/compatibility.html"><i class="fas fa-check-square"></i>Compatibility</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="../downloads.html"><i class="fas fa-download"></i>Downloads</a>
+            <a class="nav-link" href="/downloads.html"><i class="fas fa-download"></i>Downloads</a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="https://www.reddit.com/r/teknoparrot/" target="_blank"><i class="fab fa-reddit"></i>Reddit</a>
@@ -74,10 +74,16 @@
 							<span style="font-weight: bold;">Game Title: </span><br />Wacky Races
 						</p>
 						<p>
-							<span style="font-weight: bold;">Hardware: </span><br />
+							<span style="font-weight: bold;">Hardware: </span><br />Taito Type X2
 						</p>
 						<p>
 							<span style="font-weight: bold;">Game Info: </span><br />
+							Wacky Races is an officially licensed racing game based on the popular cartoon series. It features 
+							11 licensed vehicles, 23 licensed characters, and 6 tracks including Frosty Mountain, Urban City and Grand Canyon Desert.
+							<br /><br />
+							The game uses a password system to save your individual game data rather than a card system, and up to 4 cabinets 
+							can be linked together for versus racing.
+
 						</p>
 					</div>
 				</div>
@@ -93,11 +99,11 @@
 					<div class="tekno-box-content gpu-support">
 						<div class="row" style="text-align: center;">
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-check-circle great"></i>
 								<p>Nvidia</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-check-circle great"></i>
 								<p>AMD</p>
 							</div>
 							<div class="col-md-4">
@@ -118,6 +124,35 @@
 					</div>
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
+						<ul>
+							<li>Executable is 'launcher.exe' (or potentially 'game.exe')</li>
+							<li>Be sure your executable is in the game's ROOT folder, and NOT a sub-folder like 'data'.</li>
+							<li>Make sure you are not using a modified executable from some other loader.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tekno-box">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-network-wired"></i>LAN Networking (2-? Players)</p>
+					</div>
+					<div class="tekno-box-content">
+						<p style="font-weight: bold;">Setup</p>
+						<ul>
+							<li>Set up all arcade machine IP addresses within GAME SETTINGS in TeknoParrot UI.</li>
+							<li>On each arcade machine, enter test menu and set a unique ID (1, 2, 3, 4, etc).</li>
+							<li>Whatever is machine ID 1, it will act as the server, and must be booted first, then the other cabinets can boot and connect.</li>
+						</ul>
+						<p><small>Always allow Window Firewall to pass through communication of this game. This should auto pop-up upon first execution (Alt+Tab to view or exit game).</small></p>
+						
+						<p style="font-weight: bold;">Known Working IP/Subnets</p>
+						<ul>
+							<li>192.168.1.x/255.255.255.0</li>
+						</ul>
 					</div>
 				</div>
 			</div>
