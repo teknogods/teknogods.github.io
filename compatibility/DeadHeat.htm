@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>TeknoParrot > Compatibility > Wangan Midnight Maximum Tune 3</title>
+    <title>TeknoParrot > Compatibility > Dead Heat</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -61,7 +61,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="tekno-box-clear h-100">
-					<img class="img-fluid" src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/WMMT3.png" />
+					<img class="img-fluid" src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/DeadHeat.png" onerror="if (this.src != '../img/teknoparrot-logo-compat-page.png') this.src = '../img/teknoparrot-logo-compat-page.png';" />
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -71,18 +71,19 @@
 					</div>
 					<div class="tekno-box-content" style="height: 90%">
 						<p>
-							<span style="font-weight: bold;">Game Title: </span><br />Wangan Midnight Maximum Tune 3
+							<span style="font-weight: bold;">Game Title: </span><br />Dead Heat
 						</p>
 						<p>
-							<span style="font-weight: bold;">Hardware: </span><br />Namco N2
+							<span style="font-weight: bold;">Hardware: </span><br />Namco ES1
 						</p>
 						<p>
 							<span style="font-weight: bold;">Game Info: </span><br />
-							Wangan Midnight Maximum Tune 3 (also known as Maximum Tune 3, or simply Maxi 3) 
-							is an arcade racing video game developed and published by NAMCO and based on the 
-							Wangan Midnight manga. It is the third game in the Wangan Midnight Maximum Tune 
-							series and the fourth entry of the Wangan Midnight arcade series. This was released 
-							in 2007 in both Japan and the United States.
+							Dead Heat offers challenging, head-to-head racing with 4 painstakingly detailed cities to race 
+							through: New York, Chicago, San Francisco, and London. The game creators drove through each of 
+							these cities taking footage and notes to recreate them with as much realistic detail as possible.<br /><br />
+
+							You get to do this using 8 licensed race cars to drive in: Chevy Corvette, Dodge Viper GTS, Ford GT, Ford 
+							Mustang, Mazda RX-7, Nissan 370X, Nissan Skyline GT-R and Mitsubishi Lancer Evolution X.
 						</p>
 					</div>
 				</div>
@@ -106,7 +107,7 @@
 								<p>AMD</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-exclamation-circle great"></i>
+								<i class="fas fa-check-circle great"></i>
 								<p>Intel</p>
 							</div>
 						</div>
@@ -129,37 +130,8 @@
 						</ul>
 						<p style="font-weight: bold;">Game</p>
 						<ul>
-							<li>Both JP and Export versions should work.</li>
-							<li>Executable is "main" found in game's root folder.</li>
-						</ul>
-						<p style="font-weight: bold;">Card Reader Emulator</p>
-						<ul>
-							<li>Special thanks to Andy for his awesome work on this card emulator!</li>
-							<li>Download latest "YACardEmu-Release.zip" from <a href="https://github.com/GXTX/YACardEmu/releases" target="_blank">https://github.com/GXTX/YACardEmu/releases</a></li>
-							<li>Extract archive somewhere and copy "config.ini.sample" to "config.ini"</li>
-							<li>Open "config.ini" to make following edits</li>
-							<ul>
-								<li>Edit "basepath =" and set to wherever you want to save your card data. basepath MUST end in a trailing slash!</li>
-								<li>Edit "serialpath =" to "serialpath = \\.\pipe\YACardEmu"
-							</ul>
-							<li>Card can be inserted through any web browser, just access via the IP of whatever machine is running the emulator. (ie. 192.168.1.2:8080)</li>
-						</ul>
-						<p>Sample config.ini file:</p>
-						<p>
-							[config]<br />
-							apiport = 8080<br />
-							; basepath MUST end in a trailing slash!<br />
-							basepath = ./<br />
-							serialpath = \\.\pipe\YACardEmu<br />
-							;<br />
-							; Optional<br />
-							;<br />
-							autoselectedcard = card.bin
-						</p>
-						<p style="font-weight: bold;">Intel Shader Fix</p>
-						<ul>
-							<li>Download fix <a href="https://mega.nz/file/vthETaSS#HAjiwd68K7tOf_HMOSHTyAy5bf_Z2PbqmdjzNQVa2-8" target="_blank">here</a>.</li>
-							<li>Extract files to matching folder structure</li>
+							<li>Executable is "a.elf" found in game's root folder.</li>
+							<li>Keypad mechanic in-game uses keyboard inputs and is functional.</li>
 						</ul>
 					</div>
 				</div>
@@ -189,23 +161,7 @@
 						<p class="qaq">The following are known issues:</p>
 						<p class="qaa">
 							<ul>
-								<li>LAN doesn't work (VS MODE)</li>
-								<li>Missing music after race (need to manually copy data/sound/bgm/maxi3/sys_04.wav to /env/tmp/sys_04.wav)</li>
-								<li>Time Attack sometimes crash</li>
-								<li>Window doesn't change size when changing resolution in config.lua</li>
-								<li>No fullscreen support</li>
-							</ul>
-						</p>
-						<p class="qaq">Test menu crash</p>
-						<p class="qaa">Disable Steering Power (FFB) option in test, then will no longer crash</p>
-						<p class="qaq">Test menu continously scrolls through options</p>
-						<p class="qaa">Press Shift Up or Shift Down one time to stop the scrolling.</p>
-						<p class="qaq">Wheel calibration is off, car pulls to the side, pedals not working in-game</p>
-						<p class="qaa">Edit "testmode.lua" in "&lt;game folder&gt;\env\tmp\data"
-							<ul>
-								<li>Change "CalibrationGas" to 0</li>
-								<li>Change "CalibrationBrake" to 0</li>
-								<li>Change "CalibrationSteering" to 32768</li>
+								<li>Sound is not in Stereo</li>
 							</ul>
 						</p>
 					</div>
@@ -222,6 +178,7 @@
 					<div class="tekno-box-content">
 						<ul>
 							<li>LAN</li>
+							<li>Camera</li>
 						</ul>
 					</div>
 				</div>
