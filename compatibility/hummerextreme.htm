@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>TeknoParrot > Compatibility > Ring Riders</title>
+    <title>TeknoParrot > Compatibility > Hummer Extreme Edition</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -61,7 +61,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="tekno-box-clear h-100">
-					<img class="img-fluid" src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/RingRiders.png" onerror="if (this.src != '../img/teknoparrot-logo-compat-page.png') this.src = '../img/teknoparrot-logo-compat-page.png';" />
+					<img class="img-fluid" src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/hummerextreme.png" onerror="if (this.src != '../img/teknoparrot-logo-compat-page.png') this.src = '../img/teknoparrot-logo-compat-page.png';" />
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -71,23 +71,17 @@
 					</div>
 					<div class="tekno-box-content" style="height: 90%">
 						<p>
-							<span style="font-weight: bold;">Game Title: </span><br />Ring Riders
+							<span style="font-weight: bold;">Game Title: </span><br />Hummer Extreme Edition
 						</p>
 						<p>
-							<span style="font-weight: bold;">Hardware: </span><br />Gaelco PC Based
+							<span style="font-weight: bold;">Hardware: </span><br />SEGA Lindbergh Yellow
 						</p>
 						<p>
 							<span style="font-weight: bold;">Game Info: </span><br />
-							Ring Riders is a 3D motorcycle racing game set in a theme park. The game contains several 
-							courses with up to four racers on the track. Points are scored by riding through giant rings, 
-							doing acrobatics and the finishing position. Rings have different colours (red, yellow and 
-							green) with different points. The focus is however on the time as a 5,000 points need to be 
-							scored within the time limit to extend the time and continue racing. The game offers 20 
-							characters to choose from. They have different characteristics based on power, weight and 
-							speed. There are two circuits: Hurricane Ride and Seaquake Ride. Both circuits can be played 
-							with different weather conditions, which determines the difficulty level (Easy, Medium, 
-							Advanced) along with different surfaces such as mud, rain, sand, snow and water. There are 
-							five bikes available with different characteristics.
+							Hummer is an off-road racing game from Sega. The game is licensed 
+							by General Motors and puts you behind the wheel of a Hummer SUV. 
+							Players must navigate a variety of different terrains including 
+							snow, mud, and dirt.
 						</p>
 					</div>
 				</div>
@@ -103,15 +97,15 @@
 					<div class="tekno-box-content gpu-support">
 						<div class="row" style="text-align: center;">
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-exclamation-circle great"></i>
 								<p>Nvidia</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-exclamation-circle great"></i>
 								<p>AMD</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-question-circle unknown"></i>
+								<i class="fas fa-exclamation-circle great"></i>
 								<p>Intel</p>
 							</div>
 						</div>
@@ -129,9 +123,35 @@
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
 						<ul>
-							<li>Copy 'gameport' from joc2001\joc2003\Sources\gameport\linux to joc2001\joc2003\salidas</li>
-							<li>Game executable is 'gameport' that you just copied.</li>
+							<li>Game executable is 'hummer_Master.elf' in root dir or &lt;root&gt;/disk0/.</li>
 						</ul>
+						<p style="font-weight: bold;">Shader fixes</p>
+						<ul>
+							<li>If you have a non-GTX 1660 / RTX gpu, download this shaderfix: <a href="#">Hummer_ShaderFix.7z</a></li>
+							<li>If you have a GTX 1660 / RTX gpu (or if you notice lots of flickering in-game), download this shaderfix: <a href="#">Hummer_FlickerFix.7z</a></li>
+							<li>Extract the appropriate shaderfix zip into folder with 'hummer_Master.elf' and overwrite existing files.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tekno-box">
+					<div class="tekno-box-header">
+						<p><i class="fas fa-network-wired"></i>LAN Networking (2-4 Players)</p>
+					</div>
+					<div class="tekno-box-content">
+						<p style="font-weight: bold;">Setup</p>
+						<ul>
+							<li>Set IP addresses of each LAN machine in GAME SETTINGS for Hummer in TeknoParrotUI. You must set both the IP of the machine itself, and then the IP of each intended connected machine.</li>
+							<li>Do this for each machine intended to be connected.</li>
+							<li>Enter test menu on each machine and set the Cab ID according to how you setup the IPs in TeknoParrotUI</li>
+							<li>Also in test menu, set the total number of cabs intended to be connected</li>
+						</ul>
+						<p>Game should enter a network check screen after PLEASE WAIT... screen, once all machines make it to this screen they should find eachother and connect successfully.</p>
+						<p><small>Always allow Window Firewall to pass through communication of this game. This should auto pop-up upon first execution (Alt+Tab to view or exit game).</small></p>
 					</div>
 				</div>
 			</div>
@@ -144,6 +164,8 @@
 						<p><i class="fas fa-exclamation-circle"></i>Common Issues / Questions</p>
 					</div>
 					<div class="tekno-box-content">
+						<p class="qaq">Graphics are flickering, dark, or lots of objects on the screen are just white boxes</p>
+						<p class="qaa">Be sure to apply the appropriate shader fix found above.</p>
 					</div>
 				</div>
 			</div>
