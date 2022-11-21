@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>TeknoParrot > Compatibility > Mario Kart: Arcade GP DX</title>
+    <title>TeknoParrot > Compatibility > America's Army Arcade</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,9 +17,6 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/navbar-top-fixed.css" rel="stylesheet">
-	
-	<!-- MKDX Server Checker -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
 
   <body>
@@ -64,7 +61,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="tekno-box-clear h-100">
-					<img class="img-fluid" src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/MKDX.png" />
+					<img class="img-fluid" src="https://raw.githubusercontent.com/teknogods/TeknoParrotUIThumbnails/master/Icons/AAA.png" onerror="if (this.src != '../img/teknoparrot-logo-compat-page.png') this.src = '../img/teknoparrot-logo-compat-page.png';" />
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -74,21 +71,16 @@
 					</div>
 					<div class="tekno-box-content" style="height: 90%">
 						<p>
-							<span style="font-weight: bold;">Game Title: </span><br />Mario Kart: Arcade GP DX
+							<span style="font-weight: bold;">Game Title: </span><br />America's Army Arcade
 						</p>
 						<p>
-							<span style="font-weight: bold;">Hardware: </span><br />Namco ES3A
+							<span style="font-weight: bold;">Hardware: </span><br />Global VR PC Based
 						</p>
 						<p>
 							<span style="font-weight: bold;">Game Info: </span><br />
-							Mario Kart Arcade GP DX is a Mario Kart game for arcade systems, 
-							developed by Namco Bandai Games in partnership with Nintendo. It 
-							is the tenth installment in the Mario Kart franchise and the third 
-							title in the Arcade series following Mario Kart Arcade GP 2, which 
-							was a follow-up to Mario Kart Arcade GP. The game was released in 
-							Japan on July 25, 2013 and in the United States during 2014. 
-							Just like the previous two Arcade GP games, it is possible to 
-							do multiplayer play by linking up to four cabinets.
+							An army combat simulation game where the players shoot their way through 
+							eight different game levels including Sniper Course, Shoot House, Shotgun 
+							Training, Mover Target, Pistol Range, Point Range, Grenade Course and Indoor Shooting Range.
 						</p>
 					</div>
 				</div>
@@ -112,7 +104,7 @@
 								<p>AMD</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-times-circle unplayable"></i>
+								<i class="fas fa-check-circle great"></i>
 								<p>Intel</p>
 							</div>
 						</div>
@@ -130,59 +122,7 @@
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
 						<ul>
-							<li>Executable is "MK_AGP3_FINAL.exe" found in game's root folder.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-12">
-				<div class="tekno-box">
-					<div class="tekno-box-header">
-						<p><i class="fas fa-globe"></i>Server Status</p>
-					</div>
-					<div class="tekno-box-content">
-						<p class="qaq">Card Saving</p>
-						<p class="qaa" id="mkdx-status">Loading...</p>
-						<script type="text/javascript">
-							$.getJSON({url: 'https://harm.io/mkdx/json.php', timeout: 5000, cache: false}).done(function(json) {
-								console.log(json);
-								if (json.online)
-									$('#mkdx-status').html("Online");
-								else
-									$('#mkdx-status').html("Offline");
-							});;
-						</script>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<div class="tekno-box">
-					<div class="tekno-box-header">
-						<p><i class="fas fa-network-wired"></i>LAN Networking (2-? Players)</p>
-					</div>
-					<div class="tekno-box-content">
-						<p>Setting up for LAN does <strong>not affect</strong> the ability to run this game in standalone mode.</p>
-
-						<p style="font-weight: bold;">Setup</p>
-						<ol>
-							<li>Edit the Game Settings within TeknoParrotUI.</li>
-							<li>Set the "Gateway" network IP address to your "Default Gateway" address (Run "cmd.exe /k ipconfig")</li>
-							<li>Run Game and enter the Test Menu.</li>
-							<li>Enter Game Settings (second option down).</li>
-							<li>Set a unique Cabinet ID and save.</li>
-							<li>Exit Test Menu with test key.</li>
-						</ol>
-						<p><small>Always allow Window Firewall to pass through communication of this game. This should auto pop-up upon first execution (Alt+Tab to view or exit game).</small></p>
-						
-						<p style="font-weight: bold;">Known Working IP/Subnets</p>
-						<ul>
-							<li>192.168.0.x/255.255.255.0</li>
+							<li>Executable is "armyops-bin" found in &lt;root&gt;/System/</li>
 						</ul>
 					</div>
 				</div>
@@ -196,25 +136,6 @@
 						<p><i class="fas fa-exclamation-circle"></i>Common Issues / Questions</p>
 					</div>
 					<div class="tekno-box-content">
-						<p class="qaq">Setup Banapass</p>
-						<p class="qaa">
-							Go to <a href="https://teknoparrot.com/OnlineProfile/MKDX" target=_blank">https://teknoparrot.com/OnlineProfile/MKDX</a> 
-							(make sure you're logged in) 
-							and generate an ID number. Within TeknoParrotUI, input this ID 
-							number while setting up Mario Kart. In-game, press F2 to insert 
-							the card.
-						</p>
-						<p class="qaq">Graphic error during launch, or game launches in tiny window</p>
-						<p class="qaa">
-							Download missing files <a href="https://mega.nz/file/aIUxSJrQ#sOCDDmPXCmPwzSZ_EPCPvg3SIMXbSVQ0PscachAS-K8" target="-blank">here.</a><br />
-							Extract to respective folders inside Windows directory.
-						</p>
-						<p class="qaq">Camera image is rotated incorrectly</p>
-						<p class="qaa">
-							There is no in-game fix that you can do to resolve this, but there are specific 
-							cameras you can purchase that seem to rotate correctly for some reason. You can 
-							also physically rotate your camera.
-						</p>
 					</div>
 				</div>
 			</div>
@@ -227,9 +148,9 @@
 						<p><i class="fas fa-times"></i>Features Not Emulated</p>
 					</div>
 					<div class="tekno-box-content">
-						<ul>
-							<li>World Multiplayer</li>
-						</ul>
+						<p>
+							&nbsp;
+						</p>
 					</div>
 				</div>
 			</div>
@@ -260,7 +181,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
