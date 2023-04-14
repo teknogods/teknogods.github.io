@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>TeknoParrot > Compatibility > Initial D: Arcade Stage Zero</title>
+    <title>TeknoParrot > Compatibility > Initial D: Arcade Stage Zero Ver.2</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -71,7 +71,7 @@
 					</div>
 					<div class="tekno-box-content" style="height: 90%">
 						<p>
-							<span style="font-weight: bold;">Game Title: </span><br />Initial D: Arcade Stage Zero
+							<span style="font-weight: bold;">Game Title: </span><br />Initial D: Arcade Stage Zero Ver.2
 						</p>
 						<p>
 							<span style="font-weight: bold;">Hardware: </span><br />SEGA Nu
@@ -124,27 +124,13 @@
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
 						<ul>
-							<li>Create a folder like "Initial D Arcade Stage Zero"</li>
-							<li>Extract 'amfs', 'app', and 'pack' folders into your "Initial D Arcade Stage Zero" folder</li>
-							<li>
-								Open browser and go to <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a>, click download 
-								link for "12.18.1 LTS"
-							</li>
-							<li>
-								Run installer, and during install when prompted for "Automatically install the necessary tools"
-								check this option in (aka. yes you want this)
-							</li>
-							<li>Let the installer and additional tool setup (takes awhile) until it says "Type ENTER to exit:"</li>
-							<li>Open your TeknoParrot folder and navigate to "SegaTools\minime", run "start.bat"</li>
-							<li>Let all the stuff happen until it says "Startup OK"</li>
-							<li>Press Ctrl + C to stop the above</li>
-							<li>Run TeknoParrot as <span style="font-weight: bold;">Administrator</span></li>
-							<li>In GAME SETTINGS, you must set the Network adapter IP to your own local IP (eg. 192.168.1.103)</li>
-							<li>Game executable is "InitialD0_DX11_Nu.exe" within "app\package" folder</li>
-						</ul>
-						<p style="font-weight: bold;">Additional Help</p>
-						<ul>
-							<li>Also, <a href="https://www.youtube.com/watch?v=9c4i6U21xzg" target="_blank">here</a> is a helpful setup video.</li>
+							<li>Be sure you have a clean dump of Version 2.30</li>
+							<li>Make an account at <a href="https://teknoparrot.com/" target="_blank">teknoparrot.com</a></li>
+							<li>Head to the <a href="https://teknoparrot.com/OnlineProfile" target="_blank">Online Profiles</a> page and click on the 
+								ALL.Net P-ras MULTI link to generate an APM3 ID.</li>
+							<li>Copy that ID into your IDZ game settings in TeknoParrotUI under "General - OnlineID"</li>
+							<li>When you boot the game, be sure to have a button set to insert AIME card, then press that button to load your card
+								and enable progress saving.</li>
 						</ul>
 					</div>
 				</div>
@@ -158,29 +144,13 @@
 						<p><i class="fas fa-exclamation-circle"></i>Common Issues / Questions</p>
 					</div>
 					<div class="tekno-box-content">
-						<p class="qaq">Black screen</p>
+						<p class="qaq">If you have ANY questions regarding SegaTools or Minime</p>
 						<p class="qaa">
-							Edit "initiald.ini"<br />
-							Edit "fullscreen=1" to "fullscreen=0"
+							These components were used in an old 3rd party setup and are no longer required for the optimal experience.
+							You no longer need these and should not be using them. Everything you need is within TeknoParrot.
 						</p>
-						<p class="qaq">If you get a DVD Drive Error when launching the game</p>
-						<p class="qaa">
-							Having a DVD drive may cause a specific error with the game (?!) so you'll need to patch the exe to get past this<br />
-							Get a program like HxD <a href="https://mh-nexus.de/en/hxd/" target="_blank">here</a> (Free)<br />
-							Within HxD, open the "amdaemon.exe" from "package" folder<br />
-							Use the Go to function and enter: 225534<br />
-							Change the "74" to "EB"
-						</p>
-						<p class="qaq">If you already had SegaTools manually setup</p>
-						<p class="qaa">
-							Find these files: aimeio.dll, idzhook.dll, idzio.dll<br />
-							Rename to: aimeio.original.dll, idzhook.original.dll, idzio.original.dll<br />
-							Find 'segatools.ini' and rename to 'segatools.backup.ini'
-						</p>
-						<p class="qaq">I ran "start.bat" but it didn't work!</p>
-						<p class="qaa">Do NOT use "start.bat" with TeknoParrot! Run the game via TeknoParrot and the appropriate exe mentioned above</p>
-						<p class="qaq">Running game from various Drive letters</p>
-						<p class="qaa">Game MAY need to run from C: only right now, try to see if it helps if you're having trouble with another drive letter.</p>
+						<p class="qaq">There's a popup complaining about my amdaemon!</p>
+						<p class="qaa">As indicated by the popup, you do not have a clean amdaemon exe, find a better one.</p>
 					</div>
 				</div>
 			</div>
@@ -195,8 +165,7 @@
 					<div class="tekno-box-content">
 						<ul>
 							<li>
-								Currently there are no multiplayer or network capabilities. You cannot race other players
-								at this time.
+								Only in-store battle via LAN (or VPN) is supported for multiplayer.
 							</li>
 						</ul>
 					</div>
