@@ -137,19 +137,21 @@
 								<li>Edit "basepath =" and set to wherever you want to save your card data. basepath MUST end in a trailing slash!</li>
 								<li>Edit "serialpath =" to "serialpath = \\.\pipe\YACardEmu"
 							</ul>
-							<li>Card can be inserted through any web browser, just access via the IP of whatever machine is running the emulator. (ie. 192.168.1.2:8080)</li>
-						</ul>
+							<li>Card can be inserted through any web browser, just access via the IP of whatever machine is running the emulator. (ie. 192.168.1.2:8080)
+								or by pressing whatever key you have bound to swipe card in TPUI. </ul>
 						<p>Sample config.ini file:</p>
 						<p>
-							[config]<br />
-							apiport = 8080<br />
-							; basepath MUST end in a trailing slash!<br />
-							basepath = ./<br />
-							serialpath = \\.\pipe\YACardEmu<br />
-							;<br />
-							; Optional<br />
-							;<br />
-							autoselectedcard = card.bin
+							<pre style="background: #d1d1d1; color:#181818; border-radius: 4px; padding:5px; border: 1px solid rgb(179, 179, 179)"><code>[config]
+apiport = 8080
+; basepath MUST end in a trailing slash!
+basepath = ./
+serialpath = \\.\pipe\YACardEmu
+targetdevice = S31R
+;
+; Optional
+;
+autoselectedcard = card.bin
+								</code></pre>
 						</p>
 						<p style="font-weight: bold;">Intel Shader Fix</p>
 						<ul>
