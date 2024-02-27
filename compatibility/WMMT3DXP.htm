@@ -44,7 +44,7 @@
             <a class="nav-link" href="https://www.reddit.com/r/teknoparrot/" target="_blank"><i class="fab fa-reddit"></i>Reddit</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="https://teknoparrot.shop/" target="_blank"><i class="fas fa-store-alt"></i>Shop</a>
+            <a class="nav-link" href="https://www.teknoparrot.shop/" target="_blank"><i class="fas fa-store-alt"></i>Shop</a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="https://discord.gg/bntkyXZ" target="_blank"><i class="fab fa-discord"></i>Discord</a>
@@ -101,7 +101,7 @@
 								<p>AMD</p>
 							</div>
 							<div class="col-md-4">
-								<i class="fas fa-exclamation-circle great"></i>
+								<i class="fas fa-check-circle issues"></i>
 								<p>Intel</p>
 							</div>
 						</div>
@@ -118,49 +118,6 @@
 					</div>
 					<div class="tekno-box-content">
 						<p style="font-weight: bold;">Game</p>
-						<ul>
-							<li>Both JP and Export versions should work.</li>
-							<li>Executable is "main" found in game's root folder.</li>
-						</ul>
-						<p style="font-weight: bold;">Card Reader Emulator</p>
-						<ul>
-							<li>Special thanks to Andy for his awesome work on this card emulator!</li>
-							<li>Download latest "YACardEmu-Release.zip" from <a href="https://github.com/GXTX/YACardEmu/releases" target="_blank">https://github.com/GXTX/YACardEmu/releases</a></li>
-							<li>Extract archive somewhere and copy "config.ini.sample" to "config.ini"</li>
-							<li>Open "config.ini" to make following edits</li>
-							<ul>
-								<li>Edit "basepath =" and set to wherever you want to save your card data. basepath MUST end in a trailing slash!</li>
-								<li>Edit "serialpath =" to "serialpath = \\.\pipe\YACardEmu"
-							</ul>
-							<li>Card can be inserted through any web browser, just access via the IP of whatever machine is running the emulator. (ie. 192.168.1.2:8080)
-								or by pressing whatever key you have bound to swipe card in TPUI. 
-							</li>
-						</ul>
-						<p>Sample config.ini file:</p>
-						<pre style="background: #d1d1d1; color:#181818; border-radius: 4px; padding:5px; border: 1px solid rgb(179, 179, 179)"><code>[config]
-apiport = 8080
-; basepath MUST end in a trailing slash!
-basepath = ./
-serialpath = \\.\pipe\YACardEmu
-targetdevice = S31R
-;
-; Optional
-;
-autoselectedcard = card.bin
-</code></pre>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<div class="tekno-box">
-					<div class="tekno-box-header">
-						<p><i class="fas fa-network-wired"></i>LAN Networking (2-? Players)</p>
-					</div>
-					<div class="tekno-box-content">
-						<p>LAN not functional at this time, is being looked at.</p>
 					</div>
 				</div>
 			</div>
@@ -173,21 +130,6 @@ autoselectedcard = card.bin
 						<p><i class="fas fa-exclamation-circle"></i>Common Issues / Questions</p>
 					</div>
 					<div class="tekno-box-content">
-						<p class="qaq">The following are known issues:</p>
-						<p class="qaa">
-							<ul>
-								<li>LAN doesn't work (VS MODE)</li>
-								<li>No fullscreen support</li>
-							</ul>
-						</p>
-						<p class="qaq">Test menu continously scrolls through options</p>
-						<p class="qaa">Press Shift Down one time or more times until you are in neutral gear to stop the scrolling. (Only happens if debug mode is enabled)</p>
-						<p class="qaq">Wheel calibration is off, car pulls to the side, pedals not working in-game</p>
-						<p class="qaa">Go to the test menu, IO Test and then initialize I/O to reset calibration</p>
-						<p class="qaq">Inserting a card shows an error and I have to reboot the game</p>
-						<p class="qaa">Go into your card folder and remove card0, then next time you start the game, do NOT click yes on the first card prompt (which asks if you have one)
-							instead, click no, and then click yes on the next one which is asking if you want to buy a new card. Otherwise the card emu will create a 0kb empty card that can't be loaded.
-						</p>
 					</div>
 				</div>
 			</div>
@@ -200,9 +142,9 @@ autoselectedcard = card.bin
 						<p><i class="fas fa-times"></i>Features Not Emulated</p>
 					</div>
 					<div class="tekno-box-content">
-						<ul>
-							<li>LAN</li>
-						</ul>
+						<p>
+							&nbsp;
+						</p>
 					</div>
 				</div>
 			</div>
@@ -220,7 +162,7 @@ autoselectedcard = card.bin
 							or link to any game files or other copyrighted materials.
 						</p>
 						<p>
-							Thanks to Reaver, NTAuthority, avail, nzgamer41, Nezarn, nibs, Boomslangnz, Pooterman, Patreons, and all 
+							Thanks to Reaver, NTAuthority, avail, nzgamer41, Nezarn, nibs, Boomslangnz, Pooterman, Shop Subs, and all 
 							community members who support this project.
 						</p>
 					</div>
